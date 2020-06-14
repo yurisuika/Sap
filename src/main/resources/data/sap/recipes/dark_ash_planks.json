@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:dark_ash_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:dark_ash_planks",
+    "count": 4
+  }
+}

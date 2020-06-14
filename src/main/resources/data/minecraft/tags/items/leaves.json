@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_leaves",
+    "sap:aspen_leaves",
+    "sap:dark_ash_leaves",
+    "sap:fir_leaves",
+    "sap:pine_leaves",
+    "sap:redwood_leaves",
+    "sap:willow_leaves"
+  ]
+}

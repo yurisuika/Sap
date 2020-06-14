@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_slab",
+    "sap:aspen_slab",
+    "sap:dark_ash_slab",
+    "sap:fir_slab",
+    "sap:pine_slab",
+    "sap:redwood_slab",
+    "sap:willow_slab"
+  ]
+}

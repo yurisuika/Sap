@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:redwood_planks"
+    }
+  },
+  "result": {
+    "item": "sap:redwood_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_button",
+    "sap:aspen_button",
+    "sap:dark_ash_button",
+    "sap:fir_button",
+    "sap:pine_button",
+    "sap:redwood_button",
+    "sap:willow_button"
+  ]
+}

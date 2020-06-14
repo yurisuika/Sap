@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_stairs",
+    "sap:aspen_stairs",
+    "sap:dark_ash_stairs",
+    "sap:fir_stairs",
+    "sap:pine_stairs",
+    "sap:redwood_stairs",
+    "sap:willow_stairs"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_pressure_plate",
+    "sap:aspen_pressure_plate",
+    "sap:dark_ash_pressure_plate",
+    "sap:fir_pressure_plate",
+    "sap:pine_pressure_plate",
+    "sap:redwood_pressure_plate",
+    "sap:willow_pressure_plate"
+  ]
+}

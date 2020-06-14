@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_boat",
+    "sap:aspen_boat",
+    "sap:dark_ash_boat",
+    "sap:fir_boat",
+    "sap:pine_boat",
+    "sap:redwood_boat",
+    "sap:willow_boat"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#sap:ash_logs",
+    "#sap:aspen_logs",
+    "#sap:dark_ash_logs",
+    "#sap:fir_logs",
+    "#sap:pine_logs",
+    "#sap:redwood_logs",
+    "#sap:willow_logs"
+  ]
+}

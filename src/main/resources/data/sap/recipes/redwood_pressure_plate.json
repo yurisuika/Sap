@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:redwood_planks"
+    }
+  },
+  "result": {
+    "item": "sap:redwood_pressure_plate"
+  }
+}

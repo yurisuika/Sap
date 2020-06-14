@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:redwood_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:redwood_planks",
+    "count": 4
+  }
+}

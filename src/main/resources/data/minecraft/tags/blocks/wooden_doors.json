@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_door",
+    "sap:aspen_door",
+    "sap:dark_ash_door",
+    "sap:fir_door",
+    "sap:pine_door",
+    "sap:redwood_door",
+    "sap:willow_door"
+  ]
+}

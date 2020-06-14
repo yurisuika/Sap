@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/fir_slab" },
+        "type=top": { "model": "sap:block/fir_slab_top" },
+        "type=double": { "model": "sap:block/fir_planks" }
+    }
+}

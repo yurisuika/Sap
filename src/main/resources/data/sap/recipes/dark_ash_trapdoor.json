@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:dark_ash_planks"
+    }
+  },
+  "result": {
+    "item": "sap:dark_ash_trapdoor",
+    "count": 2
+  }
+}

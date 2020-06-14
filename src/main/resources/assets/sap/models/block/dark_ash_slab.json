@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "sap:block/dark_ash_planks",
+        "top": "sap:block/dark_ash_planks",
+        "side": "sap:block/dark_ash_planks"
+    }
+}

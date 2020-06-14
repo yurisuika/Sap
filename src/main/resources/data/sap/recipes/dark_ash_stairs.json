@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:dark_ash_planks"
+    }
+  },
+  "result": {
+    "item": "sap:dark_ash_stairs",
+    "count": 4
+  }
+}

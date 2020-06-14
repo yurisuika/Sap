@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_planks",
+    "sap:aspen_planks",
+    "sap:dark_ash_planks",
+    "sap:fir_planks",
+    "sap:pine_planks",
+    "sap:redwood_planks",
+    "sap:willow_planks"
+  ]
+}

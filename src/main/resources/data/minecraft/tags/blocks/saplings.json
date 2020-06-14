@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_sapling",
+    "sap:aspen_sapling",
+    "sap:dark_ash_sapling",
+    "sap:fir_sapling",
+    "sap:pine_sapling",
+    "sap:redwood_sapling",
+    "sap:willow_sapling"
+  ]
+}

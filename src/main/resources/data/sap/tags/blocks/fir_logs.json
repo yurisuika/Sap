@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:fir_log",
+    "sap:fir_wood",
+    "sap:stripped_fir_log",
+    "sap:stripped_fir_wood"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:aspen_planks"
+    }
+  },
+  "result": {
+    "item": "sap:aspen_trapdoor",
+    "count": 2
+  }
+}
