@@ -2,26 +2,30 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "sap:ash_boat"
+      "sap:willow_sign"
     ]
   },
   "criteria": {
-    "in_water": {
-      "trigger": "minecraft:enter_block",
+    "has_willow_planks": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "block": "minecraft:water"
+        "items": [
+          {
+            "item": "sap:willow_planks"
+          }
+        ]
       }
     },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sap:ash_boat"
+        "recipe": "sap:willow_sign"
       }
     }
   },
   "requirements": [
     [
-      "in_water",
+      "has_willow_planks",
       "has_the_recipe"
     ]
   ]

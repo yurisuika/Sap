@@ -2,26 +2,30 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "sap:fir_boat"
+      "sap:aspen_sign"
     ]
   },
   "criteria": {
-    "in_water": {
-      "trigger": "minecraft:enter_block",
+    "has_aspen_planks": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "block": "minecraft:water"
+        "items": [
+          {
+            "item": "sap:aspen_planks"
+          }
+        ]
       }
     },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sap:fir_boat"
+        "recipe": "sap:aspen_sign"
       }
     }
   },
   "requirements": [
     [
-      "in_water",
+      "has_aspen_planks",
       "has_the_recipe"
     ]
   ]

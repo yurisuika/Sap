@@ -2,26 +2,30 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "sap:aspen_boat"
+      "sap:dark_ash_sign"
     ]
   },
   "criteria": {
-    "in_water": {
-      "trigger": "minecraft:enter_block",
+    "has_dark_ash_planks": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "block": "minecraft:water"
+        "items": [
+          {
+            "item": "sap:dark_ash_planks"
+          }
+        ]
       }
     },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sap:aspen_boat"
+        "recipe": "sap:dark_ash_sign"
       }
     }
   },
   "requirements": [
     [
-      "in_water",
+      "has_dark_ash_planks",
       "has_the_recipe"
     ]
   ]

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_wall_sign",
+    "sap:aspen_wall_sign",
+    "sap:dark_ash_wall_sign",
+	  "sap:fir_wall_sign",
+	  "sap:pine_wall_sign",
+    "sap:redwood_wall_sign",
+    "sap:willow_wall_sign"
+  ]
+}

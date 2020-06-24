@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+issueTrackerURL="https://github.com/yurisuika/Sap/issues"
+
+[[mods]]
+modId="sap"
+version="0.0.1"
+displayName="Sap"
+updateJSONURL="https://github.com/yurisuika/Sap/releases"
+displayURL="https://github.com/yurisuika/Sap"
+logoFile="pack.png"
+credits="yurisuika"
+authors="yurisuika"
+description="Sap - a realistic flora mod."
+
+[[dependencies.sap]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.sap]]
+    modId="abnormals_core"
+    mandatory=true
+    versionRange="[1.0.6,)"
+    ordering="AFTER"
+    side="BOTH"

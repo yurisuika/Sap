@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sap:ash_fence",
+    "sap:aspen_fence",
+    "sap:dark_ash_fence",
+    "sap:fir_fence",
+    "sap:pine_fence",
+    "sap:redwood_fence",
+    "sap:willow_fence"
+  ]
+}

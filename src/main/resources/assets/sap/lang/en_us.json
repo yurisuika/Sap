@@ -1,8 +1,4 @@
 {
-  "itemGroup.sap": "Sap",
-
-  "item.sap.icon": "Sap",
-
   "item.sap.ash_boat": "Ash Boat",
   "item.sap.aspen_boat": "Aspen Boat",
   "item.sap.dark_ash_boat": "Dark Ash Boat",
@@ -28,6 +24,7 @@
   "block.sap.ash_wood": "Ash Wood",
   "block.sap.stripped_ash_log": "Stripped Ash Log",
   "block.sap.stripped_ash_wood": "Stripped Ash Wood",
+  "block.sap.potted_ash_sapling": "Potted Ash Sapling",
 
   "block.sap.aspen_button": "Aspen Button",
   "block.sap.aspen_door": "Aspen Door",
@@ -46,6 +43,7 @@
   "block.sap.aspen_wood": "Aspen Wood",
   "block.sap.stripped_aspen_log": "Stripped Aspen Log",
   "block.sap.stripped_aspen_wood": "Stripped Aspen Wood",
+  "block.sap.potted_aspen_sapling": "Potted Aspen Sapling",
 
   "block.sap.dark_ash_button": "Dark Ash Button",
   "block.sap.dark_ash_door": "Dark Ash Door",
@@ -64,6 +62,7 @@
   "block.sap.dark_ash_wood": "Dark Ash Wood",
   "block.sap.stripped_dark_ash_log": "Stripped Dark Ash Log",
   "block.sap.stripped_dark_ash_wood": "Stripped Dark Ash Wood",
+  "block.sap.potted_dark_ash_sapling": "Potted Dark Ash Sapling",
 
   "block.sap.fir_button": "Fir Button",
   "block.sap.fir_door": "Fir Door",
@@ -82,8 +81,7 @@
   "block.sap.fir_wood": "Fir Wood",
   "block.sap.stripped_fir_log": "Stripped Fir Log",
   "block.sap.stripped_fir_wood": "Stripped Fir Wood",
-  "block.sap.stripped_pine_log": "Stripped Pine Log",
-  "block.sap.stripped_pine_wood": "Stripped Pine Wood",
+  "block.sap.potted_fir_sapling": "Potted Fir Sapling",
 
   "block.sap.pine_button": "Pine Button",
   "block.sap.pine_door": "Pine Door",
@@ -100,6 +98,9 @@
   "block.sap.pine_trapdoor": "Pine Trapdoor",
   "block.sap.pine_wall_sign": "Pine Wall Sign",
   "block.sap.pine_wood": "Pine Wood",
+  "block.sap.stripped_pine_log": "Stripped Pine Log",
+  "block.sap.stripped_pine_wood": "Stripped Pine Wood",
+  "block.sap.potted_pine_sapling": "Potted Pine Sapling",
 
   "block.sap.redwood_button": "Redwood Button",
   "block.sap.redwood_door": "Redwood Door",
@@ -118,6 +119,7 @@
   "block.sap.redwood_wood": "Redwood Wood",
   "block.sap.stripped_redwood_log": "Stripped Redwood Log",
   "block.sap.stripped_redwood_wood": "Stripped Redwood Wood",
+  "block.sap.potted_redwood_sapling": "Potted Redwood Sapling",
 
   "block.sap.willow_button": "Willow Button",
   "block.sap.willow_door": "Willow Door",
@@ -136,14 +138,5 @@
   "block.sap.willow_wood": "Willow Wood",
   "block.sap.stripped_willow_log": "Stripped Willow Log",
   "block.sap.stripped_willow_wood": "Stripped Willow Wood",
-
-  "block.sap.potted_ash_sapling": "Potted Ash Sapling",
-  "block.sap.potted_aspen_sapling": "Potted Aspen Sapling",
-  "block.sap.potted_dark_ash_sapling": "Potted Dark Ash Sapling",
-  "block.sap.potted_fir_sapling": "Potted Fir Sapling",
-  "block.sap.potted_pine_sapling": "Potted Pine Sapling",
-  "block.sap.potted_redwood_sapling": "Potted Redwood Sapling",
-  "block.sap.potted_willow_sapling": "Potted Willow Sapling",
-
-  "entity.sap.boat": "Boat"
+  "block.sap.potted_willow_sapling": "Potted Willow Sapling"
 }

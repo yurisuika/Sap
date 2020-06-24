@@ -2,26 +2,30 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "sap:pine_boat"
+      "sap:redwood_sign"
     ]
   },
   "criteria": {
-    "in_water": {
-      "trigger": "minecraft:enter_block",
+    "has_redwood_planks": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "block": "minecraft:water"
+        "items": [
+          {
+            "item": "sap:redwood_planks"
+          }
+        ]
       }
     },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sap:pine_boat"
+        "recipe": "sap:redwood_sign"
       }
     }
   },
   "requirements": [
     [
-      "in_water",
+      "has_redwood_planks",
       "has_the_recipe"
     ]
   ]
