@@ -19,7 +19,7 @@ When using Git, just choose a directory you wish to keep the project root folder
 ```shell script
 git clone --recursive https://github.com/yurisuika/sap.git
 
-cd ./sky
+cd ./sap
 
 ./gradlew build
 ```
@@ -32,9 +32,9 @@ While you can compile from source, you can always download the latest releases r
 
 #### Latest Builds
 
-Stable releases of Sky ready to be consumed by the public!
+Stable releases of Sap ready to be consumed by the public!
 
-##### 1.15 - [*`Nothing yet!`*]()
+##### 1.15 - [*`0.1.0`*](https://github.com/yurisuika/Sap/releases/tag/0.1.0)
 
 ## LINKS
 
