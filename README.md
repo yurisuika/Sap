@@ -40,7 +40,7 @@ Stable releases of Sap ready to be consumed by the public!
 
 Get all the hot tips and tricks here!
 
-##### DEPENDENCIES
+#### DEPENDENCIES
 
 Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library as a dependency!
 
@@ -48,6 +48,6 @@ Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnorma
 
 Join *`play.suikacraft.com`* to play on SuikaCraft today!
 
-##### DISCORD
+#### DISCORD
 
 The one and only! Join the *[SuikaCraft Discord](https://discord.gg/0zdNEkQle7Qg9C1H)* to find the latest discussion on the resource pack and server or just to chat!
