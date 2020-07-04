@@ -1,0 +1,23 @@
+{
+    "multipart": [
+        {   "apply": { "model": "sap:block/dark_oak_twig_center" }},
+        {   "when": { "north": "true" },
+            "apply": { "model": "sap:block/dark_oak_twig_north", "uvlock": true }
+        },
+        {   "when": { "east": "true" },
+            "apply": { "model": "sap:block/dark_oak_twig_east", "uvlock": true }
+        },
+        {   "when": { "south": "true" },
+            "apply": { "model": "sap:block/dark_oak_twig_south", "uvlock": true }
+        },
+        {   "when": { "west": "true" },
+            "apply": { "model": "sap:block/dark_oak_twig_west", "uvlock": true }
+        },
+        {   "when": { "up": "true" },
+            "apply": { "model": "sap:block/dark_oak_twig_top", "uvlock": true }
+        },
+        {   "when": { "down": "true" },
+            "apply": { "model": "sap:block/dark_oak_twig_bottom", "uvlock": true }
+        }
+    ]
+}

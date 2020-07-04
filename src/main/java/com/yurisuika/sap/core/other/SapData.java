@@ -127,6 +127,38 @@ public class SapData {
 		DataUtils.registerFlammable(SapBlocks.REDWOOD_FENCE_GATE.get(), 5, 20);
 		DataUtils.registerFlammable(SapBlocks.WILLOW_FENCE_GATE.get(), 5, 20);
 
+		//Branches
+		DataUtils.registerFlammable(SapBlocks.OAK_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.SPRUCE_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.BIRCH_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.JUNGLE_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.DARK_OAK_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.ACACIA_BRANCH.get(), 5, 5);
+
+		DataUtils.registerFlammable(SapBlocks.ASH_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.ASPEN_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.DARK_ASH_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.FIR_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.PINE_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.REDWOOD_BRANCH.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.WILLOW_BRANCH.get(), 5, 5);
+
+		//Twigs
+		DataUtils.registerFlammable(SapBlocks.OAK_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.SPRUCE_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.BIRCH_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.JUNGLE_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.DARK_OAK_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.ACACIA_TWIG.get(), 5, 5);
+
+		DataUtils.registerFlammable(SapBlocks.ASH_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.ASPEN_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.DARK_ASH_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.FIR_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.PINE_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.REDWOOD_TWIG.get(), 5, 5);
+		DataUtils.registerFlammable(SapBlocks.WILLOW_TWIG.get(), 5, 5);
+
 	}
 	
 	public static void setRenderLayers() {

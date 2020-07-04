@@ -1,0 +1,23 @@
+{
+    "multipart": [
+        {   "apply": { "model": "sap:block/willow_branch_center" }},
+        {   "when": { "north": "true" },
+            "apply": { "model": "sap:block/willow_branch_north", "uvlock": true }
+        },
+        {   "when": { "east": "true" },
+            "apply": { "model": "sap:block/willow_branch_east", "uvlock": true }
+        },
+        {   "when": { "south": "true" },
+            "apply": { "model": "sap:block/willow_branch_south", "uvlock": true }
+        },
+        {   "when": { "west": "true" },
+            "apply": { "model": "sap:block/willow_branch_west", "uvlock": true }
+        },
+        {   "when": { "up": "true" },
+            "apply": { "model": "sap:block/willow_branch_top", "uvlock": true }
+        },
+        {   "when": { "down": "true" },
+            "apply": { "model": "sap:block/willow_branch_bottom", "uvlock": true }
+        }
+    ]
+}

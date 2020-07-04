@@ -1,0 +1,66 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "sap:block/stripped_oak_branch_center"
+      }
+    },
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "sap:block/stripped_oak_branch_top",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "down": "true"
+      },
+      "apply": {
+        "model": "sap:block/stripped_oak_branch_bottom",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "sap:block/stripped_oak_branch_side",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "sap:block/stripped_oak_branch_side",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "sap:block/stripped_oak_branch_side",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "sap:block/stripped_oak_branch_side",
+        "y": 270,
+        "uvlock": true
+      }
+    }
+  ]
+}

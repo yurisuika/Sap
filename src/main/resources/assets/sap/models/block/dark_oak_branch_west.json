@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_branch_west",
+  "textures": {
+    "log": "sap:block/dark_oak_branch",
+    "log_top": "sap:block/dark_oak_branch_top"
+  }
+}

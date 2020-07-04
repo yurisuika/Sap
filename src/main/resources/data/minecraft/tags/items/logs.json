@@ -7,6 +7,34 @@
     "#sap:fir_logs",
     "#sap:pine_logs",
     "#sap:redwood_logs",
-    "#sap:willow_logs"
+    "#sap:willow_logs",
+
+    "#sap:oak_branches",
+    "#sap:spruce_branches",
+    "#sap:birch_branches",
+    "#sap:jungle_branches",
+    "#sap:dark_oak_branches",
+    "#sap:acacia_branches",
+    "#sap:ash_branches",
+    "#sap:aspen_branches",
+    "#sap:dark_ash_branches",
+    "#sap:fir_branches",
+    "#sap:pine_branches",
+    "#sap:redwood_branches",
+    "#sap:willow_branches",
+
+    "#sap:oak_twigs",
+    "#sap:spruce_twigs",
+    "#sap:birch_twigs",
+    "#sap:jungle_twigs",
+    "#sap:dark_oak_twigs",
+    "#sap:acacia_twigs",
+    "#sap:ash_twigs",
+    "#sap:aspen_twigs",
+    "#sap:dark_ash_twigs",
+    "#sap:fir_twigs",
+    "#sap:pine_twigs",
+    "#sap:redwood_twigs",
+    "#sap:willow_twigs"
   ]
 }

@@ -1,5 +1,7 @@
 package com.yurisuika.sap.core.registry;
 
+import com.yurisuika.sap.common.block.BranchBlock;
+import com.yurisuika.sap.common.block.TwigBlock;
 import com.yurisuika.sap.common.world.gen.feature.trees.*;
 import com.yurisuika.sap.core.Sap;
 import com.yurisuika.sap.core.other.SapProperties;
@@ -24,15 +26,8 @@ import com.teamabnormals.abnormals_core.common.blocks.wood.WoodStairsBlock;
 import com.teamabnormals.abnormals_core.common.blocks.wood.WoodTrapDoorBlock;
 import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
 import net.minecraft.block.Block.Properties;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.DoublePlantBlock;
-import net.minecraft.block.FlowerPotBlock;
-import net.minecraft.block.PressurePlateBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.WallBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.entity.item.PaintingType;
@@ -50,7 +45,7 @@ public class SapBlocks {
 
 	public static final RegistryObject<Block> STRIPPED_ASH_LOG 		= HELPER.createBlock("stripped_ash_log", () -> new StrippedLogBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> STRIPPED_ASH_WOOD 	= HELPER.createBlock("stripped_ash_wood", () -> new StrippedWoodBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> ASH_LOG				= HELPER.createBlock("ash_log", () -> new AbnormalsLogBlock(STRIPPED_ASH_LOG, MaterialColor.GREEN, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> ASH_LOG				= HELPER.createBlock("ash_log", () -> new AbnormalsLogBlock(STRIPPED_ASH_LOG, MaterialColor.WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> ASH_WOOD 				= HELPER.createBlock("ash_wood", () -> new WoodBlock(STRIPPED_ASH_WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> ASH_PLANKS 			= HELPER.createBlock("ash_planks", () -> new PlanksBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> ASH_SLAB 				= HELPER.createBlock("ash_slab", () -> new WoodSlabBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -68,7 +63,7 @@ public class SapBlocks {
 
 	public static final RegistryObject<Block> STRIPPED_ASPEN_LOG 	= HELPER.createBlock("stripped_aspen_log", () -> new StrippedLogBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> STRIPPED_ASPEN_WOOD 	= HELPER.createBlock("stripped_aspen_wood", () -> new StrippedWoodBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> ASPEN_LOG				= HELPER.createBlock("aspen_log", () -> new AbnormalsLogBlock(STRIPPED_ASPEN_LOG, MaterialColor.GREEN, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> ASPEN_LOG				= HELPER.createBlock("aspen_log", () -> new AbnormalsLogBlock(STRIPPED_ASPEN_LOG, MaterialColor.WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> ASPEN_WOOD 			= HELPER.createBlock("aspen_wood", () -> new WoodBlock(STRIPPED_ASPEN_WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> ASPEN_PLANKS 			= HELPER.createBlock("aspen_planks", () -> new PlanksBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> ASPEN_SLAB 			= HELPER.createBlock("aspen_slab", () -> new WoodSlabBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -82,11 +77,11 @@ public class SapBlocks {
 	public static final RegistryObject<Block> POTTED_ASPEN_SAPLING 	= HELPER.createBlockNoItem("potted_aspen_sapling", () -> new FlowerPotBlock(SapBlocks.ASPEN_SAPLING.get(), SapProperties.FLOWER_POT));
 	public static final RegistryObject<Block> ASPEN_BUTTON 			= HELPER.createBlock("aspen_button", () -> new AbnormalsWoodButtonBlock(SapProperties.BUTTON), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> ASPEN_LEAVES 			= HELPER.createBlock("aspen_leaves", () -> new AbnormalsLeavesBlock(SapProperties.LEAVES), ItemGroup.DECORATIONS);
-	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> ASPEN_SIGNS = HELPER.createSignBlock("aspen", MaterialColor.GREEN);
+	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> ASPEN_SIGNS = HELPER.createSignBlock("aspen", MaterialColor.WOOD);
 
 	public static final RegistryObject<Block> STRIPPED_DARK_ASH_LOG 	= HELPER.createBlock("stripped_dark_ash_log", () -> new StrippedLogBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> STRIPPED_DARK_ASH_WOOD 	= HELPER.createBlock("stripped_dark_ash_wood", () -> new StrippedWoodBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> DARK_ASH_LOG				= HELPER.createBlock("dark_ash_log", () -> new AbnormalsLogBlock(STRIPPED_DARK_ASH_LOG, MaterialColor.GREEN, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> DARK_ASH_LOG				= HELPER.createBlock("dark_ash_log", () -> new AbnormalsLogBlock(STRIPPED_DARK_ASH_LOG, MaterialColor.WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> DARK_ASH_WOOD 			= HELPER.createBlock("dark_ash_wood", () -> new WoodBlock(STRIPPED_DARK_ASH_WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> DARK_ASH_PLANKS 			= HELPER.createBlock("dark_ash_planks", () -> new PlanksBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> DARK_ASH_SLAB 			= HELPER.createBlock("dark_ash_slab", () -> new WoodSlabBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -100,11 +95,11 @@ public class SapBlocks {
 	public static final RegistryObject<Block> POTTED_DARK_ASH_SAPLING 	= HELPER.createBlockNoItem("potted_dark_ash_sapling", () -> new FlowerPotBlock(SapBlocks.DARK_ASH_SAPLING.get(), SapProperties.FLOWER_POT));
 	public static final RegistryObject<Block> DARK_ASH_BUTTON 			= HELPER.createBlock("dark_ash_button", () -> new AbnormalsWoodButtonBlock(SapProperties.BUTTON), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> DARK_ASH_LEAVES 			= HELPER.createBlock("dark_ash_leaves", () -> new AbnormalsLeavesBlock(SapProperties.LEAVES), ItemGroup.DECORATIONS);
-	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> DARK_ASH_SIGNS = HELPER.createSignBlock("dark_ash", MaterialColor.GREEN);
+	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> DARK_ASH_SIGNS = HELPER.createSignBlock("dark_ash", MaterialColor.WOOD);
 
 	public static final RegistryObject<Block> STRIPPED_FIR_LOG 		= HELPER.createBlock("stripped_fir_log", () -> new StrippedLogBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> STRIPPED_FIR_WOOD 	= HELPER.createBlock("stripped_fir_wood", () -> new StrippedWoodBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> FIR_LOG				= HELPER.createBlock("fir_log", () -> new AbnormalsLogBlock(STRIPPED_FIR_LOG, MaterialColor.GREEN, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> FIR_LOG				= HELPER.createBlock("fir_log", () -> new AbnormalsLogBlock(STRIPPED_FIR_LOG, MaterialColor.WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> FIR_WOOD 				= HELPER.createBlock("fir_wood", () -> new WoodBlock(STRIPPED_FIR_WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> FIR_PLANKS 			= HELPER.createBlock("fir_planks", () -> new PlanksBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> FIR_SLAB 				= HELPER.createBlock("fir_slab", () -> new WoodSlabBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -118,11 +113,11 @@ public class SapBlocks {
 	public static final RegistryObject<Block> POTTED_FIR_SAPLING 	= HELPER.createBlockNoItem("potted_fir_sapling", () -> new FlowerPotBlock(SapBlocks.FIR_SAPLING.get(), SapProperties.FLOWER_POT));
 	public static final RegistryObject<Block> FIR_BUTTON 			= HELPER.createBlock("fir_button", () -> new AbnormalsWoodButtonBlock(SapProperties.BUTTON), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> FIR_LEAVES 			= HELPER.createBlock("fir_leaves", () -> new AbnormalsLeavesBlock(SapProperties.LEAVES), ItemGroup.DECORATIONS);
-	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> FIR_SIGNS = HELPER.createSignBlock("fir", MaterialColor.GREEN);
+	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> FIR_SIGNS = HELPER.createSignBlock("fir", MaterialColor.WOOD);
 
 	public static final RegistryObject<Block> STRIPPED_PINE_LOG 	= HELPER.createBlock("stripped_pine_log", () -> new StrippedLogBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> STRIPPED_PINE_WOOD 	= HELPER.createBlock("stripped_pine_wood", () -> new StrippedWoodBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> PINE_LOG				= HELPER.createBlock("pine_log", () -> new AbnormalsLogBlock(STRIPPED_PINE_LOG, MaterialColor.GREEN, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> PINE_LOG				= HELPER.createBlock("pine_log", () -> new AbnormalsLogBlock(STRIPPED_PINE_LOG, MaterialColor.WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> PINE_WOOD 			= HELPER.createBlock("pine_wood", () -> new WoodBlock(STRIPPED_PINE_WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> PINE_PLANKS 			= HELPER.createBlock("pine_planks", () -> new PlanksBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> PINE_SLAB 			= HELPER.createBlock("pine_slab", () -> new WoodSlabBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -136,11 +131,11 @@ public class SapBlocks {
 	public static final RegistryObject<Block> POTTED_PINE_SAPLING 	= HELPER.createBlockNoItem("potted_pine_sapling", () -> new FlowerPotBlock(SapBlocks.PINE_SAPLING.get(), SapProperties.FLOWER_POT));
 	public static final RegistryObject<Block> PINE_BUTTON 			= HELPER.createBlock("pine_button", () -> new AbnormalsWoodButtonBlock(SapProperties.BUTTON), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> PINE_LEAVES 			= HELPER.createBlock("pine_leaves", () -> new AbnormalsLeavesBlock(SapProperties.LEAVES), ItemGroup.DECORATIONS);
-	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> PINE_SIGNS = HELPER.createSignBlock("pine", MaterialColor.GREEN);
+	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> PINE_SIGNS = HELPER.createSignBlock("pine", MaterialColor.WOOD);
 
 	public static final RegistryObject<Block> STRIPPED_REDWOOD_LOG 		= HELPER.createBlock("stripped_redwood_log", () -> new StrippedLogBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> STRIPPED_REDWOOD_WOOD 	= HELPER.createBlock("stripped_redwood_wood", () -> new StrippedWoodBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> REDWOOD_LOG				= HELPER.createBlock("redwood_log", () -> new AbnormalsLogBlock(STRIPPED_REDWOOD_LOG, MaterialColor.GREEN, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> REDWOOD_LOG				= HELPER.createBlock("redwood_log", () -> new AbnormalsLogBlock(STRIPPED_REDWOOD_LOG, MaterialColor.WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> REDWOOD_WOOD 				= HELPER.createBlock("redwood_wood", () -> new WoodBlock(STRIPPED_REDWOOD_WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> REDWOOD_PLANKS 			= HELPER.createBlock("redwood_planks", () -> new PlanksBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> REDWOOD_SLAB 				= HELPER.createBlock("redwood_slab", () -> new WoodSlabBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -154,11 +149,11 @@ public class SapBlocks {
 	public static final RegistryObject<Block> POTTED_REDWOOD_SAPLING 	= HELPER.createBlockNoItem("potted_redwood_sapling", () -> new FlowerPotBlock(SapBlocks.REDWOOD_SAPLING.get(), SapProperties.FLOWER_POT));
 	public static final RegistryObject<Block> REDWOOD_BUTTON 			= HELPER.createBlock("redwood_button", () -> new AbnormalsWoodButtonBlock(SapProperties.BUTTON), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> REDWOOD_LEAVES 			= HELPER.createBlock("redwood_leaves", () -> new AbnormalsLeavesBlock(SapProperties.LEAVES), ItemGroup.DECORATIONS);
-	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> REDWOOD_SIGNS = HELPER.createSignBlock("redwood", MaterialColor.GREEN);
+	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> REDWOOD_SIGNS = HELPER.createSignBlock("redwood", MaterialColor.WOOD);
 
 	public static final RegistryObject<Block> STRIPPED_WILLOW_LOG 	= HELPER.createBlock("stripped_willow_log", () -> new StrippedLogBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> STRIPPED_WILLOW_WOOD 	= HELPER.createBlock("stripped_willow_wood", () -> new StrippedWoodBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> WILLOW_LOG			= HELPER.createBlock("willow_log", () -> new AbnormalsLogBlock(STRIPPED_WILLOW_LOG, MaterialColor.GREEN, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> WILLOW_LOG			= HELPER.createBlock("willow_log", () -> new AbnormalsLogBlock(STRIPPED_WILLOW_LOG, MaterialColor.WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> WILLOW_WOOD 			= HELPER.createBlock("willow_wood", () -> new WoodBlock(STRIPPED_WILLOW_WOOD, SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> WILLOW_PLANKS 		= HELPER.createBlock("willow_planks", () -> new PlanksBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> WILLOW_SLAB 			= HELPER.createBlock("willow_slab", () -> new WoodSlabBlock(SapProperties.PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -172,6 +167,34 @@ public class SapBlocks {
 	public static final RegistryObject<Block> POTTED_WILLOW_SAPLING = HELPER.createBlockNoItem("potted_willow_sapling", () -> new FlowerPotBlock(SapBlocks.WILLOW_SAPLING.get(), SapProperties.FLOWER_POT));
 	public static final RegistryObject<Block> WILLOW_BUTTON 		= HELPER.createBlock("willow_button", () -> new AbnormalsWoodButtonBlock(SapProperties.BUTTON), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> WILLOW_LEAVES 		= HELPER.createBlock("willow_leaves", () -> new AbnormalsLeavesBlock(SapProperties.LEAVES), ItemGroup.DECORATIONS);
-	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> WILLOW_SIGNS = HELPER.createSignBlock("willow", MaterialColor.GREEN);
+	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> WILLOW_SIGNS = HELPER.createSignBlock("willow", MaterialColor.WOOD);
+
+	public static final RegistryObject<Block> OAK_BRANCH				= HELPER.createBlock("oak_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> SPRUCE_BRANCH				= HELPER.createBlock("spruce_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> BIRCH_BRANCH				= HELPER.createBlock("birch_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> JUNGLE_BRANCH				= HELPER.createBlock("jungle_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> DARK_OAK_BRANCH			= HELPER.createBlock("dark_oak_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> ACACIA_BRANCH				= HELPER.createBlock("acacia_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> ASH_BRANCH				= HELPER.createBlock("ash_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> ASPEN_BRANCH				= HELPER.createBlock("aspen_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> DARK_ASH_BRANCH			= HELPER.createBlock("dark_ash_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> FIR_BRANCH				= HELPER.createBlock("fir_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> PINE_BRANCH				= HELPER.createBlock("pine_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> REDWOOD_BRANCH			= HELPER.createBlock("redwood_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> WILLOW_BRANCH				= HELPER.createBlock("willow_branch", () -> new BranchBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+
+	public static final RegistryObject<Block> OAK_TWIG					= HELPER.createBlock("oak_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> SPRUCE_TWIG				= HELPER.createBlock("spruce_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> BIRCH_TWIG				= HELPER.createBlock("birch_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> JUNGLE_TWIG				= HELPER.createBlock("jungle_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> DARK_OAK_TWIG				= HELPER.createBlock("dark_oak_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> ACACIA_TWIG				= HELPER.createBlock("acacia_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> ASH_TWIG					= HELPER.createBlock("ash_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> ASPEN_TWIG				= HELPER.createBlock("aspen_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> DARK_ASH_TWIG				= HELPER.createBlock("dark_ash_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> FIR_TWIG					= HELPER.createBlock("fir_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> PINE_TWIG					= HELPER.createBlock("pine_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> REDWOOD_TWIG				= HELPER.createBlock("redwood_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> WILLOW_TWIG				= HELPER.createBlock("willow_twig", () -> new TwigBlock(SapProperties.LOG), ItemGroup.BUILDING_BLOCKS);
 
 }

@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:dark_oak_branch"
+    }
+  ],
+  "result": {
+    "item": "minecraft_dark_oak_planks",
+    "count": 1
+  }
+}

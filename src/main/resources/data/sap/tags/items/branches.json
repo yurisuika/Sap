@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "#sap:oak_branches",
+    "#sap:spruce_branches",
+    "#sap:birch_branches",
+    "#sap:jungle_branches",
+    "#sap:dark_oak_branches",
+    "#sap:acacia_branches",
+    "#sap:ash_branches",
+    "#sap:aspen_branches",
+    "#sap:dark_ash_branches",
+    "#sap:fir_branches",
+    "#sap:pine_branches",
+    "#sap:redwood_branches",
+    "#sap:willow_branches"
+  ]
+}
