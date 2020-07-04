@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:birch_branch"
+    }
+  ],
+  "result": {
+    "item": "minecraft_birch_planks",
+    "count": 1
+  }
+}

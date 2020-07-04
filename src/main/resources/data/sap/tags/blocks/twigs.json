@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "#sap:oak_twigs",
+    "#sap:spruce_twigs",
+    "#sap:birch_twigs",
+    "#sap:jungle_twigs",
+    "#sap:dark_oak_twigs",
+    "#sap:acacia_twigs",
+    "#sap:ash_twigs",
+    "#sap:aspen_twigs",
+    "#sap:dark_ash_twigs",
+    "#sap:fir_twigs",
+    "#sap:pine_twigs",
+    "#sap:redwood_twigs",
+    "#sap:willow_twigs"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:acacia_branch"
+    }
+  ],
+  "result": {
+    "item": "minecraft_acacia_planks",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:willow_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:willow_planks",
+    "count": 1
+  }
+}

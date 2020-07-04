@@ -59,14 +59,8 @@ task sourcesJar(type: Jar) {
     classifier = 'sources'
 }
 
-task deobfJar(type: Jar) {
-    from sourceSets.main.output
-    classifier = 'deobf'
-}
-
 artifacts {
     archives jar
-    archives deobfJar
 }
 
 repositories { mavenLocal() }

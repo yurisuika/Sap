@@ -138,5 +138,34 @@
   "block.sap.willow_wood": "Willow Wood",
   "block.sap.stripped_willow_log": "Stripped Willow Log",
   "block.sap.stripped_willow_wood": "Stripped Willow Wood",
-  "block.sap.potted_willow_sapling": "Potted Willow Sapling"
+  "block.sap.potted_willow_sapling": "Potted Willow Sapling",
+
+  "block.sap.oak_branch": "Oak Branch",
+  "block.sap.spruce_branch": "Spruce Branch",
+  "block.sap.birch_branch": "Birch Branch",
+  "block.sap.jungle_branch": "Jungle Branch",
+  "block.sap.dark_oak_branch": "Dark Oak Branch",
+  "block.sap.acacia_branch": "Acacia Branch",
+  "block.sap.ash_branch": "Ash Branch",
+  "block.sap.aspen_branch": "Aspen Branch",
+  "block.sap.dark_ash_branch": "Dark Ash Branch",
+  "block.sap.fir_branch": "Fir Branch",
+  "block.sap.pine_branch": "Pine Branch",
+  "block.sap.redwood_branch": "Redwood Branch",
+  "block.sap.willow_branch": "Willow Branch",
+
+  "block.sap.oak_twig": "Oak Twig",
+  "block.sap.spruce_twig": "Spruce Twig",
+  "block.sap.birch_twig": "Birch Twig",
+  "block.sap.jungle_twig": "Jungle Twig",
+  "block.sap.dark_oak_twig": "Dark Oak Twig",
+  "block.sap.acacia_twig": "Acacia Twig",
+  "block.sap.ash_twig": "Ash Twig",
+  "block.sap.aspen_twig": "Aspen Twig",
+  "block.sap.dark_ash_twig": "Dark Ash Twig",
+  "block.sap.fir_twig": "Fir Twig",
+  "block.sap.pine_twig": "Pine Twig",
+  "block.sap.redwood_twig": "Redwood Twig",
+  "block.sap.willow_twig": "Willow Twig"
+
 }
