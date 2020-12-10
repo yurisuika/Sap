@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:hornbeam_log",
+    "sap:hornbeam_wood",
+    "sap:stripped_hornbeam_log",
+    "sap:stripped_hornbeam_wood"
+  ]
+}

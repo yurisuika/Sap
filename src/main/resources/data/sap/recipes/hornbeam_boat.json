@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:hornbeam_planks"
+    }
+  },
+  "result": {
+    "item": "sap:hornbeam_boat"
+  }
+}

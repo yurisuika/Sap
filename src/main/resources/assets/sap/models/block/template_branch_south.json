@@ -8,7 +8,7 @@
 			"to": [12, 12, 16],
 			"faces": {
 				"east": {"uv": [0, 4, 4, 12], "texture": "#log"},
-				"south": {"uv": [4, 4, 12, 12], "texture": "#log"},
+				"south": {"uv": [8, 8, 16, 16], "texture": "#log_top"},
 				"west": {"uv": [12, 4, 16, 12], "texture": "#log"},
 				"up": {"uv": [4, 12, 12, 16], "texture": "#log"},
 				"down": {"uv": [4, 0, 12, 4], "texture": "#log"}

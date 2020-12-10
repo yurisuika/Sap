@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:blackwood_log"
+    }
+  },
+  "result": {
+    "item": "sap:blackwood_wood",
+    "count": 3
+  }
+}

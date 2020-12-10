@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:mango_log"
+    }
+  },
+  "result": {
+    "item": "sap:mango_wood",
+    "count": 3
+  }
+}

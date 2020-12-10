@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:mesquite_planks"
+    }
+  },
+  "result": {
+    "item": "sap:mesquite_boat"
+  }
+}

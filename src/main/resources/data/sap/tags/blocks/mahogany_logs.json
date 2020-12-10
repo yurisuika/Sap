@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:mahogany_log",
+    "sap:mahogany_wood",
+    "sap:stripped_mahogany_log",
+    "sap:stripped_mahogany_wood"
+  ]
+}

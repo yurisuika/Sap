@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/sycamore_slab" },
+        "type=top": { "model": "sap:block/sycamore_slab_top" },
+        "type=double": { "model": "sap:block/sycamore_planks" }
+    }
+}

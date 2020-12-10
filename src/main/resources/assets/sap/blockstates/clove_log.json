@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":    { "model": "sap:block/clove_log" },
+        "axis=z":     { "model": "sap:block/clove_log", "x": 90 },
+        "axis=x":     { "model": "sap:block/clove_log", "x": 90, "y": 90 }
+    }
+}

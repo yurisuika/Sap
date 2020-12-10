@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "com.yurisuika.sap.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "sap.refmap.json",
+  "mixins": [
+    "world.MixinFoliageColors",
+    "world.biome.MixinSwampBiome",
+    "world.biome.MixinSwampHillsBiome",
+    "world.biome.MixinDarkForestBiome",
+    "world.biome.MixinDarkForestHillsBiome",
+    "world.dimension.MixinOverworldDimension",
+    "world.biome.MixinBiome",
+    "block.material.MixinMaterialColor"
+  ],
+  "client": [
+    "client.renderer.color.MixinBlockColors"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

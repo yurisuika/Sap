@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:clove_log",
+    "sap:clove_wood",
+    "sap:stripped_clove_log",
+    "sap:stripped_clove_wood"
+  ]
+}

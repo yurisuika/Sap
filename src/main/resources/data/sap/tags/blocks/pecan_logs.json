@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:pecan_log",
+    "sap:pecan_wood",
+    "sap:stripped_pecan_log",
+    "sap:stripped_pecan_wood"
+  ]
+}

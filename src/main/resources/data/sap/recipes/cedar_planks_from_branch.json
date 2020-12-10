@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:cedar_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:cedar_planks",
+    "count": 1
+  }
+}

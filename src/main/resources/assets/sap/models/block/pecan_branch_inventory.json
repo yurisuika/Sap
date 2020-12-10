@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_branch_inventory",
+  "textures": {
+    "log": "sap:block/pecan_branch",
+    "log_top": "sap:block/pecan_branch_top"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:ginkgo_planks"
+    }
+  },
+  "result": {
+    "item": "sap:ginkgo_trapdoor",
+    "count": 2
+  }
+}

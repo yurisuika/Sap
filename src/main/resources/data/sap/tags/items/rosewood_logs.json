@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:rosewood_log",
+    "sap:rosewood_wood",
+    "sap:stripped_rosewood_log",
+    "sap:stripped_rosewood_wood"
+  ]
+}

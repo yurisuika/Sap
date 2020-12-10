@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_twig_center_south",
+  "textures": {
+    "log": "sap:block/juniper_twig",
+    "log_top": "sap:block/juniper_twig_top"
+  }
+}

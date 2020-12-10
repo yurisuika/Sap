@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sap:hazel_sign"
+    ]
+  },
+  "criteria": {
+    "has_hazel_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "sap:hazel_planks"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sap:hazel_sign"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_hazel_planks",
+      "has_the_recipe"
+    ]
+  ]
+}

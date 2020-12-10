@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:cottonwood_planks"
+    }
+  },
+  "result": {
+    "item": "sap:cottonwood_boat"
+  }
+}

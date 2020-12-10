@@ -1,0 +1,1 @@
+MixinConnector: com.yurisuika.sap.mixin.MixinConnector

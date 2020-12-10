@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "sap:block/hickory_planks",
+        "top": "sap:block/hickory_planks",
+        "side": "sap:block/hickory_planks"
+    }
+}

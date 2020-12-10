@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "sap:block/hornbeam_planks",
+        "top": "sap:block/hornbeam_planks",
+        "side": "sap:block/hornbeam_planks"
+    }
+}

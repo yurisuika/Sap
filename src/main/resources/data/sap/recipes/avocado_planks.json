@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:avocado_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:avocado_planks",
+    "count": 4
+  }
+}

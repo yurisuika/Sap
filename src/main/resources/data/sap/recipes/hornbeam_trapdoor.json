@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:hornbeam_planks"
+    }
+  },
+  "result": {
+    "item": "sap:hornbeam_trapdoor",
+    "count": 2
+  }
+}

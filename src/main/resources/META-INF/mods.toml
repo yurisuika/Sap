@@ -4,7 +4,7 @@ issueTrackerURL="https://github.com/yurisuika/Sap/issues"
 
 [[mods]]
 modId="sap"
-version="0.1.0"
+version="0.2.0"
 displayName="Sap"
 updateJSONURL="https://github.com/yurisuika/Sap/releases"
 displayURL="https://github.com/yurisuika/Sap"
@@ -26,3 +26,4 @@ description="Sap - a realistic flora mod."
     versionRange="[1.0.6,)"
     ordering="AFTER"
     side="BOTH"
+

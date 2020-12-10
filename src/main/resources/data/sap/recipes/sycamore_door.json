@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:sycamore_planks"
+    }
+  },
+  "result": {
+    "item": "sap:sycamore_door",
+    "count": 3
+  }
+}

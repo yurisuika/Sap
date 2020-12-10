@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":    { "model": "sap:block/cinnamon_log" },
+        "axis=z":     { "model": "sap:block/cinnamon_log", "x": 90 },
+        "axis=x":     { "model": "sap:block/cinnamon_log", "x": 90, "y": 90 }
+    }
+}

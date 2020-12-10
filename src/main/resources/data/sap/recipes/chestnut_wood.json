@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:chestnut_log"
+    }
+  },
+  "result": {
+    "item": "sap:chestnut_wood",
+    "count": 3
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:juniper_planks"
+    }
+  },
+  "result": {
+    "item": "sap:juniper_door",
+    "count": 3
+  }
+}

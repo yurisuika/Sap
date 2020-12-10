@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:cedar_planks"
+    }
+  },
+  "result": {
+    "item": "sap:cedar_door",
+    "count": 3
+  }
+}

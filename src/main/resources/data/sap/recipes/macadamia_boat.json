@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:macadamia_planks"
+    }
+  },
+  "result": {
+    "item": "sap:macadamia_boat"
+  }
+}

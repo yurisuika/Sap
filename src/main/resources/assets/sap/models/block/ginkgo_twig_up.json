@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_twig_up",
+  "textures": {
+    "log": "sap:block/ginkgo_twig",
+    "log_top": "sap:block/ginkgo_twig_top"
+  }
+}

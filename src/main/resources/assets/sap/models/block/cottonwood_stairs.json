@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "sap:block/cottonwood_planks",
+        "top": "sap:block/cottonwood_planks",
+        "side": "sap:block/cottonwood_planks"
+    }
+}

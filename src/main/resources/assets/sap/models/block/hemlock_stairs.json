@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "sap:block/hemlock_planks",
+        "top": "sap:block/hemlock_planks",
+        "side": "sap:block/hemlock_planks"
+    }
+}

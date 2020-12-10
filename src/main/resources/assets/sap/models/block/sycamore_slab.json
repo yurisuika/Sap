@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "sap:block/sycamore_planks",
+        "top": "sap:block/sycamore_planks",
+        "side": "sap:block/sycamore_planks"
+    }
+}

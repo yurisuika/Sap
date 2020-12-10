@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_branch_west",
+  "textures": {
+    "log": "sap:block/yew_branch",
+    "log_top": "sap:block/yew_branch_top"
+  }
+}

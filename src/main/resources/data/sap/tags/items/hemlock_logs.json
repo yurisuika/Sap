@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:hemlock_log",
+    "sap:hemlock_wood",
+    "sap:stripped_hemlock_log",
+    "sap:stripped_hemlock_wood"
+  ]
+}

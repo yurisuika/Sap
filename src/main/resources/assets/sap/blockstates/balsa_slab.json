@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/balsa_slab" },
+        "type=top": { "model": "sap:block/balsa_slab_top" },
+        "type=double": { "model": "sap:block/balsa_planks" }
+    }
+}

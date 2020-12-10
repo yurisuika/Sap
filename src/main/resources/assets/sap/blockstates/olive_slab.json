@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/olive_slab" },
+        "type=top": { "model": "sap:block/olive_slab_top" },
+        "type=double": { "model": "sap:block/olive_planks" }
+    }
+}

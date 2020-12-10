@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:larch_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:larch_planks",
+    "count": 1
+  }
+}

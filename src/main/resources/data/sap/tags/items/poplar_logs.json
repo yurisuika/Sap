@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:poplar_log",
+    "sap:poplar_wood",
+    "sap:stripped_poplar_log",
+    "sap:stripped_poplar_wood"
+  ]
+}

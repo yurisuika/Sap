@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:mesquite_log",
+    "sap:mesquite_wood",
+    "sap:stripped_mesquite_log",
+    "sap:stripped_mesquite_wood"
+  ]
+}

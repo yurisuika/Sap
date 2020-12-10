@@ -14,6 +14,6 @@ import net.minecraft.world.gen.feature.TreeFeatureConfig;
 public class PineTree extends Tree {
 	@Nullable
 	protected ConfiguredFeature<TreeFeatureConfig, ?> getTreeFeature(Random randomIn, boolean p_225546_2_) {
-		return SapFeatures.WILLOW_TREE.withConfiguration(SapBiomeFeatures.WILLOW_TREE_CONFIG);
+		return SapFeatures.PINE_TREE.withConfiguration(SapBiomeFeatures.PINE_TREE_CONFIG);
 	}
 }

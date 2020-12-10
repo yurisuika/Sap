@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:juniper_log",
+    "sap:juniper_wood",
+    "sap:stripped_juniper_log",
+    "sap:stripped_juniper_wood"
+  ]
+}

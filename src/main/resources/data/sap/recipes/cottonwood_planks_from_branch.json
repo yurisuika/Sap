@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:cottonwood_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:cottonwood_planks",
+    "count": 1
+  }
+}

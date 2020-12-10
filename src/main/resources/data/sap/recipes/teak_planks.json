@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:teak_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:teak_planks",
+    "count": 4
+  }
+}

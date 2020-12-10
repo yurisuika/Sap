@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_branch_south",
+  "textures": {
+    "log": "sap:block/hemlock_branch",
+    "log_top": "sap:block/hemlock_branch_top"
+  }
+}

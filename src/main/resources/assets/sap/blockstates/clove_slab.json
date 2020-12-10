@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/clove_slab" },
+        "type=top": { "model": "sap:block/clove_slab_top" },
+        "type=double": { "model": "sap:block/clove_planks" }
+    }
+}

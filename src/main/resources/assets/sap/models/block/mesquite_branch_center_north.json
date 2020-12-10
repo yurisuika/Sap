@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_branch_center_north",
+  "textures": {
+    "log": "sap:block/mesquite_branch",
+    "log_top": "sap:block/mesquite_branch_top"
+  }
+}

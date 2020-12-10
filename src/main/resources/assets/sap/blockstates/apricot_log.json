@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":    { "model": "sap:block/apricot_log" },
+        "axis=z":     { "model": "sap:block/apricot_log", "x": 90 },
+        "axis=x":     { "model": "sap:block/apricot_log", "x": 90, "y": 90 }
+    }
+}

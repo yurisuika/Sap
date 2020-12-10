@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:gum_planks"
+    }
+  },
+  "result": {
+    "item": "sap:gum_boat"
+  }
+}

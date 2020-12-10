@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:macadamia_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:macadamia_planks",
+    "count": 4
+  }
+}

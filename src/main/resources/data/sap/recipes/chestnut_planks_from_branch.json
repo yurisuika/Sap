@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:chestnut_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:chestnut_planks",
+    "count": 1
+  }
+}

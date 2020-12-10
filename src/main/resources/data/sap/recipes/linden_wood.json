@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:linden_log"
+    }
+  },
+  "result": {
+    "item": "sap:linden_wood",
+    "count": 3
+  }
+}

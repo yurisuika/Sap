@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sap:bay_sign"
+    ]
+  },
+  "criteria": {
+    "has_bay_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "sap:bay_planks"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sap:bay_sign"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bay_planks",
+      "has_the_recipe"
+    ]
+  ]
+}

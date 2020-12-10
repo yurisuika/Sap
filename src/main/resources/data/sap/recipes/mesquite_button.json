@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "sap:mesquite_planks"
+    }
+  ],
+  "result": {
+    "item": "sap:mesquite_button"
+  }
+}

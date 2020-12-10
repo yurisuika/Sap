@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:larch_planks"
+    }
+  },
+  "result": {
+    "item": "sap:larch_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:sassafras_log",
+    "sap:sassafras_wood",
+    "sap:stripped_sassafras_log",
+    "sap:stripped_sassafras_wood"
+  ]
+}
