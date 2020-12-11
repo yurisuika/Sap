@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_yew_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:yew_planks",
+    "count": 1
+  }
+}

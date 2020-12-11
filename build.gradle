@@ -83,7 +83,7 @@ artifacts {
 jar {
     manifest {
         attributes([
-                "MixinConfigs": "sap.mixins.json"
+                "MixinConfigs": "mixins.sap.json"
         ])
     }
 }

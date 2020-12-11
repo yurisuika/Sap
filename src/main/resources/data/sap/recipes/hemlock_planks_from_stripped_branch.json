@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_hemlock_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:hemlock_planks",
+    "count": 1
+  }
+}

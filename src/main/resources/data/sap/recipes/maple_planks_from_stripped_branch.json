@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_maple_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:maple_planks",
+    "count": 1
+  }
+}

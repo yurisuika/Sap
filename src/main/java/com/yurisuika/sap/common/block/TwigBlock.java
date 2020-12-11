@@ -6,12 +6,10 @@ import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.fluid.IFluidState;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.pathfinding.PathType;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.IProperty;
@@ -20,6 +18,7 @@ import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
@@ -30,14 +29,17 @@ import net.minecraftforge.common.data.ForgeBlockTagsProvider;
 
 import java.util.Iterator;
 import java.util.Random;
+import java.util.function.Supplier;
 
 
 public class TwigBlock extends SixWayBlock implements IWaterLoggable {
 
     public static final BooleanProperty WATERLOGGED;
+    private final Supplier<Block> block;
 
-    public TwigBlock(Properties builder) {
+    public TwigBlock(Supplier<Block> strippedBlock, Properties builder) {
         super(0.125F, builder);
+        this.block = strippedBlock;
         this.setDefaultState((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)this.stateContainer.getBaseState())
                 .with(NORTH, false))
                 .with(EAST, false))
@@ -49,7 +51,10 @@ public class TwigBlock extends SixWayBlock implements IWaterLoggable {
     }
 
     public BlockState getStateForPlacement(BlockItemUseContext context) {
-        return this.makeConnections(context.getWorld(), context.getPos());
+        IBlockReader iblockreader = context.getWorld();
+        BlockPos blockpos = context.getPos();
+        IFluidState ifluidstate = context.getWorld().getFluidState(context.getPos());
+        return this.makeConnections(context.getWorld(), context.getPos()).with(WATERLOGGED, ifluidstate.getFluid() == Fluids.WATER);
     }
 
     public BlockState makeConnections(IBlockReader blockReader, BlockPos pos) {
@@ -81,19 +86,22 @@ public class TwigBlock extends SixWayBlock implements IWaterLoggable {
     }
 
     public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
-        if ((Boolean)stateIn.get(WATERLOGGED)) {
-            worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
-        } else if (!stateIn.isValidPosition(worldIn, currentPos)) {
-            worldIn.getPendingBlockTicks().scheduleTick(currentPos, this, 1);
-            return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
-        } else {
+        if (stateIn.isValidPosition(worldIn, currentPos)) {
             // ResourceLocation fence_gates = new ResourceLocation("forge", "fence_gates");
             // ResourceLocation fences = new ResourceLocation("forge", "fences");
-            Block block = facingState.getBlock();
-            boolean flag = block.isIn(BlockTags.LOGS) || block == Blocks.DIRT || block == Blocks.COARSE_DIRT || block == Blocks.GRASS_BLOCK || block == Blocks.PODZOL || block == Blocks.MYCELIUM || block.isIn(BlockTags.LEAVES)/* || block.isIn(BlockTags.getCollection().getOrCreate(fence_gates)) || block.isIn(BlockTags.getCollection().getOrCreate(fences))*/;
-            return (BlockState)stateIn.with((IProperty)FACING_TO_PROPERTY_MAP.get(facing), flag);
         }
-        return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+        else if (!stateIn.isValidPosition(worldIn, currentPos)) {
+            worldIn.getPendingBlockTicks().scheduleTick(currentPos, this, 1);
+            return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+        }
+        else if ((Boolean)stateIn.get(WATERLOGGED)) {
+            worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
+            return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+        }
+        else {}
+        Block block = facingState.getBlock();
+        boolean flag = block.isIn(BlockTags.LOGS) || block == Blocks.DIRT || block == Blocks.COARSE_DIRT || block == Blocks.GRASS_BLOCK || block == Blocks.PODZOL || block == Blocks.MYCELIUM || block.isIn(BlockTags.LEAVES)/* || block.isIn(BlockTags.getCollection().getOrCreate(fence_gates)) || block.isIn(BlockTags.getCollection().getOrCreate(fences))*/;
+        return (BlockState)stateIn.with((IProperty)FACING_TO_PROPERTY_MAP.get(facing), flag);
     }
 
     public void tick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
@@ -112,16 +120,40 @@ public class TwigBlock extends SixWayBlock implements IWaterLoggable {
         builder.add(new IProperty[]{NORTH, EAST, SOUTH, WEST, UP, DOWN, WATERLOGGED});
     }
 
-    public boolean allowsMovement(BlockState state, IBlockReader worldIn, BlockPos pos, PathType type) {
-        return true;
-    }
+    // public boolean allowsMovement(BlockState state, IBlockReader worldIn, BlockPos pos, PathType type) { return true; }
 
     static {
         WATERLOGGED = BlockStateProperties.WATERLOGGED;
     }
 
-    public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
-        entityIn.setMotionMultiplier(state, new Vec3d(0.800000011920929D, 0.75D, 0.800000011920929D));
+    //public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
+    //    entityIn.setMotionMultiplier(state, new Vec3d(0.8D, 0.8D, 0.8D));
+    //}
+
+    public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, LivingEntity entity) {
+        return true;
+    }
+
+    public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+        return true;
+    }
+
+    public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult result) {
+        if (player.getHeldItem(hand).getItem() instanceof AxeItem) {
+            world.playSound(player, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 1.0F, 1.0F);
+            world.setBlockState(pos, (BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((Block)this.block.get()).getDefaultState())
+                    .with(NORTH, state.get(NORTH)))
+                    .with(EAST, state.get(EAST)))
+                    .with(SOUTH, state.get(SOUTH)))
+                    .with(WEST, state.get(WEST)))
+                    .with(UP, state.get(UP)))
+                    .with(DOWN, state.get(DOWN)))
+                    .with(WATERLOGGED, state.get(WATERLOGGED)));
+
+            return ActionResultType.SUCCESS;
+        } else {
+            return ActionResultType.PASS;
+        }
     }
 
     @Override

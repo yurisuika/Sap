@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_ginkgo_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:ginkgo_planks",
+    "count": 1
+  }
+}

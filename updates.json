@@ -1,0 +1,10 @@
+{
+  "homepage": "https://github.com/yurisuika/Sap",
+  "1.15.2": {
+    "0.2.1": "Stripped Branches and Twigs",
+  },
+  "promos": {
+    "1.15.2-latest": "0.2.1",
+    "1.15.2-recommended": "0.2.1",
+  }
+}

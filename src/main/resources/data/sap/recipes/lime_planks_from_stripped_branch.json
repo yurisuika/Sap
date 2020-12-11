@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_lime_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:lime_planks",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_elm_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:elm_planks",
+    "count": 1
+  }
+}

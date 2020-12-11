@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_aspen_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:aspen_planks",
+    "count": 1
+  }
+}
