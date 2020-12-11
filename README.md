@@ -6,7 +6,7 @@ This mod was created for the *[SuikaCraft](https://github.com/yurisuika/SuikaCra
 
 Sap is a mod that seeks to add realistic species to the game. Currently, Sap is all about trees. However, in time we will add in more flora! Fauna and sediments are on the planning board too for future mods!
 
-While currently only available in the style of *[Isabella](https://github.com/yurisuika/Isabella)*, one day we will support vanilla textures.
+While currently only available in the style of *[Isabella](https://github.com/yurisuika/Isabella)*, one day we will support vanilla textures. Be sure to enable Custom Colors in Optifine to take advantage of the colormaps!
 
 ## FEATURES
 
@@ -25,6 +25,13 @@ While currently only available in the style of *[Isabella](https://github.com/yu
 * Branches and Twigs for all species. These allow for more realistic tree structures!
 
 ## CHANGELOG
+
+##### 0.2.1
+
+* Added stripped branches and twigs!
+* Fixed blockstate updating for branches and twigs with waterlogging!
+* Twigs are now climbable!
+* World loading screen colors are now done in Isabella style!
 
 ##### 0.2.0
 
@@ -64,7 +71,7 @@ While you can compile from source, you can always download the latest releases r
 
 Stable releases of Sap ready to be consumed by the public!
 
-##### 1.15 - [*`0.2.0`*](https://github.com/yurisuika/Sap/releases/tag/0.2.0)
+##### 1.15 - [*`0.2.1`*](https://github.com/yurisuika/Sap/releases/tag/0.2.1)
 
 ## PLANNED FEATURES
 
