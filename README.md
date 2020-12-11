@@ -77,22 +77,16 @@ Stable releases of Sap ready to be consumed by the public!
 
 Sooner or later, this is what we plan to have in the mod!
 
-#### Done
-
-* Additional Trees
-* Branches and Twigs
-
 #### Upcoming
 
-* Stripped Branches and Twigs
 * Herbs and Shrubs
 * Food Items and Recipes
-* Advanced Sapling Propagation
+* Generated Trees
 
 #### Far Off
 
+* Advanced Sapling Propagation
 * Vanilla Style Textures
-* Generated Trees
 
 ## LINKS
 
