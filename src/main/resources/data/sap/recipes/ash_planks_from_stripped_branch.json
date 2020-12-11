@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_ash_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:ash_planks",
+    "count": 1
+  }
+}

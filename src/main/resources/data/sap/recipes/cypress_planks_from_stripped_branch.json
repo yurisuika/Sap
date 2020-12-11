@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_cypress_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:cypress_planks",
+    "count": 1
+  }
+}

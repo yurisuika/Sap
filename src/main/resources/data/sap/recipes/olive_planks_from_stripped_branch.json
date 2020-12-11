@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_olive_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:olive_planks",
+    "count": 1
+  }
+}

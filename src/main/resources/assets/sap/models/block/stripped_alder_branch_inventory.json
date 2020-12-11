@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_stripped_branch_inventory",
+  "textures": {
+    "log": "sap:block/stripped_alder_branch",
+    "log_top": "sap:block/stripped_alder_branch_top"
+  }
+}

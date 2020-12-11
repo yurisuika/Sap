@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:stripped_redwood_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:redwood_planks",
+    "count": 1
+  }
+}
