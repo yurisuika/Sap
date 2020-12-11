@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sap:clove_sign"
+    ]
+  },
+  "criteria": {
+    "has_clove_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "sap:clove_planks"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sap:clove_sign"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_clove_planks",
+      "has_the_recipe"
+    ]
+  ]
+}

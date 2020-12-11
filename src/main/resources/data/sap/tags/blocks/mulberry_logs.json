@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:mulberry_log",
+    "sap:mulberry_wood",
+    "sap:stripped_mulberry_log",
+    "sap:stripped_mulberry_wood"
+  ]
+}

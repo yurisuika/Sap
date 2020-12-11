@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/ginkgo_slab" },
+        "type=top": { "model": "sap:block/ginkgo_slab_top" },
+        "type=double": { "model": "sap:block/ginkgo_planks" }
+    }
+}

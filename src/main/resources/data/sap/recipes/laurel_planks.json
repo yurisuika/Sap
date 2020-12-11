@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:laurel_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:laurel_planks",
+    "count": 4
+  }
+}

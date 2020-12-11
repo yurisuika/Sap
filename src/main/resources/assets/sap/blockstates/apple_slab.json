@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/apple_slab" },
+        "type=top": { "model": "sap:block/apple_slab_top" },
+        "type=double": { "model": "sap:block/apple_planks" }
+    }
+}

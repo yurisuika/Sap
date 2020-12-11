@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:larch_log",
+    "sap:larch_wood",
+    "sap:stripped_larch_log",
+    "sap:stripped_larch_wood"
+  ]
+}

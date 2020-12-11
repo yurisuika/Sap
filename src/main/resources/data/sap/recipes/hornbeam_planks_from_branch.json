@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:hornbeam_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:hornbeam_planks",
+    "count": 1
+  }
+}

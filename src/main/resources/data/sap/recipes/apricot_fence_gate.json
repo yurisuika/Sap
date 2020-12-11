@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_fence_gate",
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "sap:apricot_planks"
+    }
+  },
+  "result": {
+    "item": "sap:apricot_fence_gate"
+  }
+}

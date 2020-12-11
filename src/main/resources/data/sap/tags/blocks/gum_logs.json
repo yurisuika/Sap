@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:gum_log",
+    "sap:gum_wood",
+    "sap:stripped_gum_log",
+    "sap:stripped_gum_wood"
+  ]
+}

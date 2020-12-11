@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:hickory_log",
+    "sap:hickory_wood",
+    "sap:stripped_hickory_log",
+    "sap:stripped_hickory_wood"
+  ]
+}

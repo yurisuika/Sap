@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:olive_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:olive_planks",
+    "count": 4
+  }
+}

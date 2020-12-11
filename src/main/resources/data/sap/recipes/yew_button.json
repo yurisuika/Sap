@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "sap:yew_planks"
+    }
+  ],
+  "result": {
+    "item": "sap:yew_button"
+  }
+}

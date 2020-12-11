@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/dark_ash_slab" },
-        "type=top": { "model": "sap:block/dark_ash_slab_top" },
-        "type=double": { "model": "sap:block/dark_ash_planks" }
-    }
-}

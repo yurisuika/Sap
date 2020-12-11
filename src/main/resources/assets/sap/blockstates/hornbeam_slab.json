@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/hornbeam_slab" },
+        "type=top": { "model": "sap:block/hornbeam_slab_top" },
+        "type=double": { "model": "sap:block/hornbeam_planks" }
+    }
+}

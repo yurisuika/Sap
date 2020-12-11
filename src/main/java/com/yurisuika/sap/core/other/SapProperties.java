@@ -15,4 +15,6 @@ public class SapProperties {
     public static final Block.Properties LEAVES = Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).notSolid().tickRandomly().sound(SoundType.PLANT);
     public static final Block.Properties LOG = Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F).sound(SoundType.WOOD);
     public static final Block.Properties SAPLING = Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0F).sound(SoundType.PLANT);
+    public static final Block.Properties BRANCH = Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(1.0F).sound(SoundType.WOOD);
+    public static final Block.Properties TWIG = Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(0.5F).sound(SoundType.WOOD);
 }

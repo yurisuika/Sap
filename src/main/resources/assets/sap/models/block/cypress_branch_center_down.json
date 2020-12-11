@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_branch_center_down",
+  "textures": {
+    "log": "sap:block/cypress_branch",
+    "log_top": "sap:block/cypress_branch_top"
+  }
+}

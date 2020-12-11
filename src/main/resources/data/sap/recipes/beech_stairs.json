@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:beech_planks"
+    }
+  },
+  "result": {
+    "item": "sap:beech_stairs",
+    "count": 4
+  }
+}

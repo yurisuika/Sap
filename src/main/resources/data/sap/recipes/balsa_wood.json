@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:balsa_log"
+    }
+  },
+  "result": {
+    "item": "sap:balsa_wood",
+    "count": 3
+  }
+}

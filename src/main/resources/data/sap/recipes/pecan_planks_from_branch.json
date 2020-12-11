@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:pecan_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:pecan_planks",
+    "count": 1
+  }
+}

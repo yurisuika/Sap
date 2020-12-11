@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "sap:block/pecan_pressure_plate" },
+        "powered=true": { "model": "sap:block/pecan_pressure_plate_down" }
+    }
+}

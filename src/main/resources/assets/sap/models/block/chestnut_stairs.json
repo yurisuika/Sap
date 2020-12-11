@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "sap:block/chestnut_planks",
+        "top": "sap:block/chestnut_planks",
+        "side": "sap:block/chestnut_planks"
+    }
+}

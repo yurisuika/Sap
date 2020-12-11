@@ -14,6 +14,6 @@ import net.minecraft.world.gen.feature.TreeFeatureConfig;
 public class RedwoodTree extends Tree {
 	@Nullable
 	protected ConfiguredFeature<TreeFeatureConfig, ?> getTreeFeature(Random randomIn, boolean p_225546_2_) {
-		return SapFeatures.WILLOW_TREE.withConfiguration(SapBiomeFeatures.WILLOW_TREE_CONFIG);
+		return SapFeatures.REDWOOD_TREE.withConfiguration(SapBiomeFeatures.REDWOOD_TREE_CONFIG);
 	}
 }

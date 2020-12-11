@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "sap:block/sassafras_sapling"
+    }
+}

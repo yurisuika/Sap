@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_twig_north",
+  "textures": {
+    "log": "sap:block/linden_twig",
+    "log_top": "sap:block/linden_twig_top"
+  }
+}

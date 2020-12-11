@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:teak_planks"
+    }
+  },
+  "result": {
+    "item": "sap:teak_pressure_plate"
+  }
+}

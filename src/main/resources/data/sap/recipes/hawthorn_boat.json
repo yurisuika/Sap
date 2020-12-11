@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:hawthorn_planks"
+    }
+  },
+  "result": {
+    "item": "sap:hawthorn_boat"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:alder_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:alder_planks",
+    "count": 4
+  }
+}

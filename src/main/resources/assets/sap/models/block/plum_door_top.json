@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "sap:block/plum_door_bottom",
+        "top": "sap:block/plum_door_top"
+    }
+}

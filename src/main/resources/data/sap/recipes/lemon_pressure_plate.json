@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:lemon_planks"
+    }
+  },
+  "result": {
+    "item": "sap:lemon_pressure_plate"
+  }
+}

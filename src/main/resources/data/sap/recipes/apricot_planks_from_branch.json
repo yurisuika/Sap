@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:apricot_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:apricot_planks",
+    "count": 1
+  }
+}

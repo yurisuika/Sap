@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:hazel_log",
+    "sap:hazel_wood",
+    "sap:stripped_hazel_log",
+    "sap:stripped_hazel_wood"
+  ]
+}

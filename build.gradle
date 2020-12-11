@@ -1,11 +1,13 @@
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
+        maven { url = 'http://repo.spongepowered.org/maven/' }
         jcenter()
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
     }
 }
 
@@ -14,6 +16,7 @@ plugins {
 }
 
 apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
@@ -32,10 +35,12 @@ minecraft {
     runs {
         client = {
             workingDirectory = project.file("run").canonicalPath
+            arg "-mixin.config=mixins.sap.json"
             source sourceSets.main
         }
         server = {
             workingDirectory = project.file("run").canonicalPath
+            arg "-mixin.config=mixins.sap.json"
             source sourceSets.main
         }
     }
@@ -46,11 +51,23 @@ processResources {
         include 'META-INF/mods.toml'
         expand 'version': project.version
     }
+    rename '(.+_at.cfg)', 'META-INF/$1'
+}
+
+repositories {
+    maven {
+        url = "http://repo.spongepowered.org/maven"
+    }
+}
+
+mixin {
+    add sourceSets.main, "sap.refmap.json"
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:' + minecraft_version + '-' + forge_version
     implementation fg.deobf("curse.maven:abnormals-core:2980113")
+    compile 'org.spongepowered:mixin:0.8.2'
 }
 
 task sourcesJar(type: Jar) {
@@ -61,6 +78,14 @@ task sourcesJar(type: Jar) {
 
 artifacts {
     archives jar
+}
+
+jar {
+    manifest {
+        attributes([
+                "MixinConfigs": "sap.mixins.json"
+        ])
+    }
 }
 
 repositories { mavenLocal() }

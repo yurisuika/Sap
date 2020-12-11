@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:cottonwood_log",
+    "sap:cottonwood_wood",
+    "sap:stripped_cottonwood_log",
+    "sap:stripped_cottonwood_wood"
+  ]
+}

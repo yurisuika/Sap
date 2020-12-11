@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sap:cedar_sign"
+    ]
+  },
+  "criteria": {
+    "has_cedar_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "sap:cedar_planks"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sap:cedar_sign"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cedar_planks",
+      "has_the_recipe"
+    ]
+  ]
+}

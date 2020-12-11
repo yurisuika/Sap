@@ -1,10 +1,15 @@
 package com.yurisuika.sap.common.block;
 
+import com.teamabnormals.abnormals_core.core.utils.ItemStackUtils;
 import com.yurisuika.sap.core.registry.SapBlocks;
+import com.yurisuika.sap.core.registry.SapItems;
 import net.minecraft.block.*;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.fluid.IFluidState;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.pathfinding.PathType;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.IProperty;
@@ -13,6 +18,7 @@ import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Mirror;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
@@ -59,13 +65,19 @@ public class BranchBlock extends SixWayBlock implements IWaterLoggable {
         boolean flag3 = block3.isIn(BlockTags.LOGS);
         boolean flag4 = block4.isIn(BlockTags.LOGS);
         boolean flag5 = block5.isIn(BlockTags.LOGS);
+        boolean flag6 = block.isIn(BlockTags.LEAVES);
+        boolean flag7 = block1.isIn(BlockTags.LEAVES);
+        boolean flag8 = block2.isIn(BlockTags.LEAVES);
+        boolean flag9 = block3.isIn(BlockTags.LEAVES);
+        boolean flag10 = block4.isIn(BlockTags.LEAVES);
+        boolean flag11 = block5.isIn(BlockTags.LEAVES);
         return (BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)this.getDefaultState()
-                .with(DOWN, flag || block == Blocks.DIRT || block == Blocks.COARSE_DIRT || block == Blocks.GRASS_BLOCK || block == Blocks.PODZOL || block == Blocks.MYCELIUM))
-                .with(UP, flag1 || block1 == Blocks.DIRT || block1 == Blocks.COARSE_DIRT || block1 == Blocks.GRASS_BLOCK || block1 == Blocks.PODZOL || block1 == Blocks.MYCELIUM))
-                .with(NORTH, flag2 || block2 == Blocks.DIRT || block2 == Blocks.COARSE_DIRT || block2 == Blocks.GRASS_BLOCK || block2 == Blocks.PODZOL || block2 == Blocks.MYCELIUM))
-                .with(EAST, flag3 || block3 == Blocks.DIRT || block3 == Blocks.COARSE_DIRT || block3 == Blocks.GRASS_BLOCK || block3 == Blocks.PODZOL || block3 == Blocks.MYCELIUM))
-                .with(SOUTH, flag4 || block4 == Blocks.DIRT || block4 == Blocks.COARSE_DIRT || block4 == Blocks.GRASS_BLOCK || block4 == Blocks.PODZOL || block4 == Blocks.MYCELIUM))
-                .with(WEST, flag5 || block5 == Blocks.DIRT || block5 == Blocks.COARSE_DIRT || block5 == Blocks.GRASS_BLOCK || block5 == Blocks.PODZOL || block5 == Blocks.MYCELIUM);
+                .with(DOWN, flag || flag6 || block == Blocks.DIRT || block == Blocks.COARSE_DIRT || block == Blocks.GRASS_BLOCK || block == Blocks.PODZOL || block == Blocks.MYCELIUM))
+                .with(UP, flag1 || flag7 || block1 == Blocks.DIRT || block1 == Blocks.COARSE_DIRT || block1 == Blocks.GRASS_BLOCK || block1 == Blocks.PODZOL || block1 == Blocks.MYCELIUM))
+                .with(NORTH, flag2 || flag8 || block2 == Blocks.DIRT || block2 == Blocks.COARSE_DIRT || block2 == Blocks.GRASS_BLOCK || block2 == Blocks.PODZOL || block2 == Blocks.MYCELIUM))
+                .with(EAST, flag3 || flag9 || block3 == Blocks.DIRT || block3 == Blocks.COARSE_DIRT || block3 == Blocks.GRASS_BLOCK || block3 == Blocks.PODZOL || block3 == Blocks.MYCELIUM))
+                .with(SOUTH, flag4 || flag10 || block4 == Blocks.DIRT || block4 == Blocks.COARSE_DIRT || block4 == Blocks.GRASS_BLOCK || block4 == Blocks.PODZOL || block4 == Blocks.MYCELIUM))
+                .with(WEST, flag5 || flag11 || block5 == Blocks.DIRT || block5 == Blocks.COARSE_DIRT || block5 == Blocks.GRASS_BLOCK || block5 == Blocks.PODZOL || block5 == Blocks.MYCELIUM);
     }
 
     public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
@@ -78,19 +90,11 @@ public class BranchBlock extends SixWayBlock implements IWaterLoggable {
             // ResourceLocation fence_gates = new ResourceLocation("forge", "fence_gates");
             // ResourceLocation fences = new ResourceLocation("forge", "fences");
             Block block = facingState.getBlock();
-            boolean flag = block.isIn(BlockTags.LOGS) || block == Blocks.DIRT || block == Blocks.COARSE_DIRT || block == Blocks.GRASS_BLOCK || block == Blocks.PODZOL || block == Blocks.MYCELIUM /* || block.isIn(BlockTags.getCollection().getOrCreate(fence_gates)) || block.isIn(BlockTags.getCollection().getOrCreate(fences))*/;
+            boolean flag = block.isIn(BlockTags.LOGS) || block == Blocks.DIRT || block == Blocks.COARSE_DIRT || block == Blocks.GRASS_BLOCK || block == Blocks.PODZOL || block == Blocks.MYCELIUM || block.isIn(BlockTags.LEAVES)/* || block.isIn(BlockTags.getCollection().getOrCreate(fence_gates)) || block.isIn(BlockTags.getCollection().getOrCreate(fences))*/;
             return (BlockState)stateIn.with((IProperty)FACING_TO_PROPERTY_MAP.get(facing), flag);
         }
         return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
     }
-
-    //public BlockState rotate(BlockState state, Rotation rot) {
-    //    return state.with(FACING, rot.rotate(state.get(FACING)));
-    //}
-
-    //public BlockState mirror(BlockState state, Mirror mirrorIn) {
-    //    return state.with(FACING, mirrorIn.mirror(state.get(FACING)));
-    //}
 
     public void tick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
         if (!state.isValidPosition(worldIn, pos)) {
@@ -114,5 +118,17 @@ public class BranchBlock extends SixWayBlock implements IWaterLoggable {
 
     static {
         WATERLOGGED = BlockStateProperties.WATERLOGGED;
+    }
+
+    @Override
+    public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
+        if(ItemStackUtils.isInGroup(this.asItem(), group)) {
+            int targetIndex = ItemStackUtils.findIndexOfItem(Items.COAL_ORE, items);
+            if(targetIndex != -1) {
+                items.add(targetIndex + 1, new ItemStack(this));
+            } else {
+                super.fillItemGroup(group, items);
+            }
+        }
     }
 }

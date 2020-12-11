@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:orange_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:orange_planks",
+    "count": 1
+  }
+}

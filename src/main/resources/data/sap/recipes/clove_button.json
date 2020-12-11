@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "sap:clove_planks"
+    }
+  ],
+  "result": {
+    "item": "sap:clove_button"
+  }
+}

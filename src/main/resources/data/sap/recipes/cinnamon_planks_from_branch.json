@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:cinnamon_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:cinnamon_planks",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:juniper_log"
+    }
+  },
+  "result": {
+    "item": "sap:juniper_wood",
+    "count": 3
+  }
+}

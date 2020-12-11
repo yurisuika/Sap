@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "sap:block/macadamia_door_bottom",
+        "top": "sap:block/macadamia_door_top"
+    }
+}

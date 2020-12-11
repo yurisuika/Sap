@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:hemlock_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:hemlock_planks",
+    "count": 4
+  }
+}

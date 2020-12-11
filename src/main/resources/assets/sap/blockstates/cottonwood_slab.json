@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/cottonwood_slab" },
+        "type=top": { "model": "sap:block/cottonwood_slab_top" },
+        "type=double": { "model": "sap:block/cottonwood_planks" }
+    }
+}

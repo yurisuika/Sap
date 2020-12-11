@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:pecan_planks"
+    }
+  },
+  "result": {
+    "item": "sap:pecan_boat"
+  }
+}

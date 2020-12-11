@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_branch_down",
+  "textures": {
+    "log": "sap:block/gum_branch",
+    "log_top": "sap:block/gum_branch_top"
+  }
+}

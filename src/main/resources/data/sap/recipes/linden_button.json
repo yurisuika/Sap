@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "sap:linden_planks"
+    }
+  ],
+  "result": {
+    "item": "sap:linden_button"
+  }
+}

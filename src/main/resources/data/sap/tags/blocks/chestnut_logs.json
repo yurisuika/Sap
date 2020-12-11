@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:chestnut_log",
+    "sap:chestnut_wood",
+    "sap:stripped_chestnut_log",
+    "sap:stripped_chestnut_wood"
+  ]
+}

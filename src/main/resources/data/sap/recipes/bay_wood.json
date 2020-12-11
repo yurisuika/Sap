@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sap:bay_log"
+    }
+  },
+  "result": {
+    "item": "sap:bay_wood",
+    "count": 3
+  }
+}

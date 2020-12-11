@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sap:fig_log",
+    "sap:fig_wood",
+    "sap:stripped_fig_log",
+    "sap:stripped_fig_wood"
+  ]
+}

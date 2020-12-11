@@ -1,0 +1,7 @@
+{
+  "parent": "sap:block/template_twig_inventory",
+  "textures": {
+    "log": "sap:block/yew_twig",
+    "log_top": "sap:block/yew_twig_top"
+  }
+}

@@ -1,24 +1,30 @@
 package com.yurisuika.sap.common.block;
 
+import com.teamabnormals.abnormals_core.core.utils.ItemStackUtils;
 import com.yurisuika.sap.core.registry.SapBlocks;
 import net.minecraft.block.*;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.fluid.IFluidState;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.pathfinding.PathType;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.IProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.util.Direction;
-import net.minecraft.util.Mirror;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Rotation;
+import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IWorldReader;
+import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.data.ForgeBlockTagsProvider;
 
@@ -41,7 +47,6 @@ public class TwigBlock extends SixWayBlock implements IWaterLoggable {
                 .with(DOWN, false))
                 .with(WATERLOGGED, false));
     }
-
 
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         return this.makeConnections(context.getWorld(), context.getPos());
@@ -91,14 +96,6 @@ public class TwigBlock extends SixWayBlock implements IWaterLoggable {
         return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
     }
 
-    //public BlockState rotate(BlockState state, Rotation rot) {
-    //    return state.with(FACING, rot.rotate(state.get(FACING)));
-    //}
-
-    //public BlockState mirror(BlockState state, Mirror mirrorIn) {
-    //    return state.with(FACING, mirrorIn.mirror(state.get(FACING)));
-    //}
-
     public void tick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
         if (!state.isValidPosition(worldIn, pos)) {
             worldIn.destroyBlock(pos, true);
@@ -116,10 +113,26 @@ public class TwigBlock extends SixWayBlock implements IWaterLoggable {
     }
 
     public boolean allowsMovement(BlockState state, IBlockReader worldIn, BlockPos pos, PathType type) {
-        return false;
+        return true;
     }
 
     static {
         WATERLOGGED = BlockStateProperties.WATERLOGGED;
+    }
+
+    public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
+        entityIn.setMotionMultiplier(state, new Vec3d(0.800000011920929D, 0.75D, 0.800000011920929D));
+    }
+
+    @Override
+    public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
+        if(ItemStackUtils.isInGroup(this.asItem(), group)) {
+            int targetIndex = ItemStackUtils.findIndexOfItem(Items.COAL_ORE, items);
+            if(targetIndex != -1) {
+                items.add(targetIndex + 1, new ItemStack(this));
+            } else {
+                super.fillItemGroup(group, items);
+            }
+        }
     }
 }

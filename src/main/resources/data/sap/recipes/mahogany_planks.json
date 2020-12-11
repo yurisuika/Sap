@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:mahogany_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:mahogany_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "sap:block/sassafras_slab" },
+        "type=top": { "model": "sap:block/sassafras_slab_top" },
+        "type=double": { "model": "sap:block/sassafras_planks" }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:beech_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:beech_planks",
+    "count": 4
+  }
+}

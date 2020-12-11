@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sap:mesquite_logs"
+    }
+  ],
+  "result": {
+    "item": "sap:mesquite_planks",
+    "count": 4
+  }
+}

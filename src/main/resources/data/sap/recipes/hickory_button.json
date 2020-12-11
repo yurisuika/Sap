@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "sap:hickory_planks"
+    }
+  ],
+  "result": {
+    "item": "sap:hickory_button"
+  }
+}

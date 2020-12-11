@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "sap:block/cedar_pressure_plate" },
+        "powered=true": { "model": "sap:block/cedar_pressure_plate_down" }
+    }
+}

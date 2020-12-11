@@ -1,6 +1,0 @@
-{
-    "parent": "block/button_pressed",
-    "textures": {
-        "texture": "sap:block/dark_ash_planks"
-    }
-}

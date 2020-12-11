@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "sap:rosewood_branch"
+    }
+  ],
+  "result": {
+    "item": "sap:rosewood_planks",
+    "count": 1
+  }
+}
