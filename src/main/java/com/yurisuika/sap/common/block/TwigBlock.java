@@ -130,9 +130,9 @@ public class TwigBlock extends SixWayBlock implements IWaterLoggable {
     //    entityIn.setMotionMultiplier(state, new Vec3d(0.8D, 0.8D, 0.8D));
     //}
 
-    public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, LivingEntity entity) {
-        return true;
-    }
+    //public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, LivingEntity entity) {
+    //    return true;
+    //}
 
     public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
         return true;

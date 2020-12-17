@@ -6,7 +6,9 @@ This mod was created for the *[SuikaCraft](https://github.com/yurisuika/SuikaCra
 
 Sap is a mod that seeks to add realistic species to the game. Currently, Sap is all about trees. However, in time we will add in more flora! Fauna and sediments are on the planning board too for future mods!
 
-While currently only available in the style of *[Isabella](https://github.com/yurisuika/Isabella)*, one day we will support vanilla textures. Be sure to enable Custom Colors in Optifine to take advantage of the colormaps!
+While currently only available in the style of *[Isabella](https://github.com/yurisuika/Isabella)*, one day we will support vanilla textures. Check out the custom model packs while you're at it! Be sure to enable Custom Colors in Optifine to take advantage of the colormaps!
+
+While Optifine does not current support loading assets from other mods, you can either extract the shader data from the jar and put it in your pack to make Sap's blocks rustle in the wind or use the custom model pack to add them to your list. Be sure to toggle shaders to enable Optifine detects Sap's blocks, otherwise it will have loaded the shaders before detecting Sap's blocks!
 
 ## FEATURES
 
@@ -25,6 +27,11 @@ While currently only available in the style of *[Isabella](https://github.com/yu
 * Branches and Twigs for all species. These allow for more realistic tree structures!
 
 ## CHANGELOG
+
+##### 0.2.2
+
+* Twigs are no longer climbable! This was making walking through a dense forest a little annoying.
+* Fixes and improvements!
 
 ##### 0.2.1
 
@@ -71,7 +78,7 @@ While you can compile from source, you can always download the latest releases r
 
 Stable releases of Sap ready to be consumed by the public!
 
-##### 1.15 - [*`0.2.1`*](https://github.com/yurisuika/Sap/releases/tag/0.2.1)
+##### 1.15 - [*`0.2.2`*](https://github.com/yurisuika/Sap/releases/tag/0.2.2)
 
 ## PLANNED FEATURES
 
@@ -80,13 +87,14 @@ Sooner or later, this is what we plan to have in the mod!
 #### Upcoming
 
 * Herbs and Shrubs
+* Crops Domesticated from Wild Plants
 * Food Items and Recipes
-* Generated Trees
 
 #### Far Off
 
 * Advanced Sapling Propagation
 * Vanilla Style Textures
+* Generated Trees
 
 ## LINKS
 

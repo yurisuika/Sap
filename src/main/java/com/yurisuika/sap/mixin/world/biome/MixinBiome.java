@@ -18,12 +18,12 @@ public class MixinBiome {
     private int waterColor;
     private int waterFogColor;
 
-    ///**
-    // * @author
-    // * Sap
-    // * @reason
-    // * Swamp Grass Color
-    // */
+    /**
+     * @author
+     * Sap
+     * @reason
+     * Swamp Grass Color
+     */
     //@Overwrite()
     //private int calculateSkyColor() {
     //    float f = this.temperature;
@@ -51,6 +51,6 @@ public class MixinBiome {
      */
     @Overwrite()
     public final int getWaterFogColor() {
-        return 16777215;
+        return 9609378;
     }
 }
