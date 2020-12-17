@@ -11,7 +11,8 @@
     "world.biome.MixinDarkForestHillsBiome",
     "world.dimension.MixinOverworldDimension",
     "world.biome.MixinBiome",
-    "block.material.MixinMaterialColor"
+    "mod.biome.MixinMarshland",
+    "mod.biome.MixinColdMarshland"
   ],
   "client": [
     "client.renderer.color.MixinBlockColors",

@@ -14,12 +14,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(OverworldDimension.class)
 public class MixinOverworldDimension {
 
-    ///**
-    // * @author
-    // * Sap
-    // * @reason
-    // * Fog Color
-    // */
+    /**
+     * @author
+     * Sap
+     * @reason
+     * Fog Color
+     */
     //@Overwrite()
     //@OnlyIn(Dist.CLIENT)
     //public Vec3d getFogColor(float celestialAngle, float partialTicks) {

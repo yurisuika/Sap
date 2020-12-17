@@ -124,9 +124,9 @@ public class StrippedBranchBlock extends SixWayBlock implements IWaterLoggable {
     //    entityIn.setMotionMultiplier(state, new Vec3d(0.9D, 0.9D, 0.9D));
     //}
 
-    public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, LivingEntity entity) {
-        return true;
-    }
+    //public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, LivingEntity entity) {
+    //    return true;
+    //}
 
     public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
         return true;
