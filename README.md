@@ -28,6 +28,10 @@ While Optifine does not current support loading assets from other mods, you can 
 
 ## CHANGELOG
 
+##### 0.2.3
+
+* Revised textures!
+
 ##### 0.2.2
 
 * Twigs are no longer climbable! This was making walking through a dense forest a little annoying.
