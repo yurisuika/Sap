@@ -28,6 +28,15 @@ While Optifine does not current support loading assets from other mods, you can 
 
 ## CHANGELOG
 
+##### 0.2.4
+
+* Branches no longer connect to leaves!
+* Branches and twigs now only connect to ground blocks downwards!
+
+<details><summary>
+CLICK HERE TO SEE PAST LOGS!
+</summary>
+
 ##### 0.2.3
 
 * Revised textures!
@@ -53,6 +62,7 @@ While Optifine does not current support loading assets from other mods, you can 
 ##### 0.1.0
 
 * Initial release with a few trees and branches and twigs.
+</details>
 
 ## DOWNLOADS
 
