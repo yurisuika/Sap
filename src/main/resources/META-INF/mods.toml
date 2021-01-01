@@ -4,7 +4,7 @@ issueTrackerURL="https://github.com/yurisuika/Sap/issues"
 
 [[mods]]
 modId="sap"
-version="0.2.3"
+version="0.2.4"
 displayName="Sap"
 updateJSONURL="https://github.com/yurisuika/Sap/blob/master/updates.json"
 displayURL="https://github.com/yurisuika/Sap"

@@ -1,10 +1,10 @@
 {
   "homepage": "https://github.com/yurisuika/Sap",
   "1.15.2": {
-    "0.2.3": "Revised Textures",
+    "0.2.4": "Revised Branches and Twigs Connections",
   },
   "promos": {
-    "1.15.2-latest": "0.2.3",
-    "1.15.2-recommended": "0.2.3"
+    "1.15.2-latest": "0.2.4",
+    "1.15.2-recommended": "0.2.4"
   }
 }
