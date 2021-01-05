@@ -96,11 +96,8 @@ While you can compile from source, you can always download the latest releases r
 
 Stable releases of Sap ready to be consumed by the public!
 
-<<<<<<< Updated upstream
-=======
 ##### 1.16 - [*`0.3.0`*](https://github.com/yurisuika/Sky/releases/download/0.3.0/sky-1.16.4-0.3.0.jar)
 
->>>>>>> Stashed changes
 ##### 1.15 - [*`0.2.4`*](https://github.com/yurisuika/Sky/releases/download/0.2.4/sky-1.15.2-0.2.4.jar)
 
 ## PLANNED FEATURES
