@@ -1,25 +1,22 @@
 package com.yurisuika.sap.common.block;
 
-import com.teamabnormals.abnormals_core.core.utils.ItemStackUtils;
+import com.minecraftabnormals.abnormals_core.core.util.item.ItemStackUtil;
+
 import net.minecraft.block.*;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
-import net.minecraft.fluid.IFluidState;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
-import net.minecraft.world.server.ServerWorld;
-
-import java.util.Random;
-
+import net.minecraft.world.World;
 
 public class StrippedTwigBlock extends SixWayBlock implements IWaterLoggable {
 
@@ -38,8 +35,8 @@ public class StrippedTwigBlock extends SixWayBlock implements IWaterLoggable {
     }
 
     public BlockState getStateForPlacement(BlockItemUseContext context) {
-        IFluidState ifluidstate = context.getWorld().getFluidState(context.getPos());
-        return this.makeConnections(context.getWorld(), context.getPos()).with(WATERLOGGED, ifluidstate.getFluid() == Fluids.WATER);
+        FluidState fluidstate = context.getWorld().getFluidState(context.getPos());
+        return this.makeConnections(context.getWorld(), context.getPos()).with(WATERLOGGED, fluidstate.getFluid() == Fluids.WATER);
     }
 
     public BlockState makeConnections(IBlockReader blockReader, BlockPos pos) {
@@ -94,14 +91,7 @@ public class StrippedTwigBlock extends SixWayBlock implements IWaterLoggable {
         return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
     }
 
-    public void tick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
-        if (!state.isValidPosition(worldIn, pos)) {
-            worldIn.destroyBlock(pos, true);
-        }
-
-    }
-
-    public IFluidState getFluidState(BlockState state) {
+    public FluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state);
     }
 
@@ -130,10 +120,10 @@ public class StrippedTwigBlock extends SixWayBlock implements IWaterLoggable {
 
     @Override
     public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
-        if(ItemStackUtils.isInGroup(this.asItem(), group)) {
-            int targetIndex = ItemStackUtils.findIndexOfItem(Items.STRIPPED_SPRUCE_LOG, items);
+        if(ItemStackUtil.isInGroup(this.asItem(), group)) {
+            int targetIndex = ItemStackUtil.findIndexOfItem(Items.COAL_ORE, items);
             if(targetIndex != -1) {
-                items.add(targetIndex - 1, new ItemStack(this));
+                items.add(targetIndex + 1, new ItemStack(this));
             } else {
                 super.fillItemGroup(group, items);
             }

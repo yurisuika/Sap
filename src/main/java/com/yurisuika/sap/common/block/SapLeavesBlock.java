@@ -1,6 +1,6 @@
 package com.yurisuika.sap.common.block;
 
-import com.teamabnormals.abnormals_core.common.blocks.wood.AbnormalsLeavesBlock;
+import com.minecraftabnormals.abnormals_core.common.blocks.wood.AbnormalsLeavesBlock;
 
 public class SapLeavesBlock extends AbnormalsLeavesBlock
 {

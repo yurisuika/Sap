@@ -9,11 +9,11 @@ import com.yurisuika.sap.core.registry.SapFeatures;
 
 import net.minecraft.block.trees.Tree;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
+import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 
 public class HickoryTree extends Tree {
 	@Nullable
-	protected ConfiguredFeature<TreeFeatureConfig, ?> getTreeFeature(Random randomIn, boolean p_225546_2_) {
-		return SapFeatures.HICKORY_TREE.withConfiguration(SapBiomeFeatures.HICKORY_TREE_CONFIG);
+	protected ConfiguredFeature<BaseTreeFeatureConfig, ?> getTreeFeature(Random randomIn, boolean p_225546_2_) {
+		return SapFeatures.HICKORY_TREE.get().withConfiguration(SapBiomeFeatures.HICKORY_TREE_CONFIG);
 	}
 }

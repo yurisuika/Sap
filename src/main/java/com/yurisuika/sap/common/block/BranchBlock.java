@@ -1,10 +1,11 @@
 package com.yurisuika.sap.common.block;
 
-import com.teamabnormals.abnormals_core.core.utils.ItemStackUtils;
+import com.minecraftabnormals.abnormals_core.core.util.item.ItemStackUtil;
+
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
-import net.minecraft.fluid.IFluidState;
 import net.minecraft.item.*;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.StateContainer;
@@ -18,7 +19,6 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 
 import java.util.function.Supplier;
-
 
 public class BranchBlock extends SixWayBlock implements IWaterLoggable {
 
@@ -39,8 +39,8 @@ public class BranchBlock extends SixWayBlock implements IWaterLoggable {
     }
 
     public BlockState getStateForPlacement(BlockItemUseContext context) {
-        IFluidState ifluidstate = context.getWorld().getFluidState(context.getPos());
-        return this.makeConnections(context.getWorld(), context.getPos()).with(WATERLOGGED, ifluidstate.getFluid() == Fluids.WATER);
+        FluidState fluidstate = context.getWorld().getFluidState(context.getPos());
+        return this.makeConnections(context.getWorld(), context.getPos()).with(WATERLOGGED, fluidstate.getFluid() == Fluids.WATER);
     }
 
     public BlockState makeConnections(IBlockReader blockReader, BlockPos pos) {
@@ -82,14 +82,14 @@ public class BranchBlock extends SixWayBlock implements IWaterLoggable {
                 return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
             }
             else if (stateIn.get(WATERLOGGED)) {
-            worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
-            return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+                worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
+                return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
             }
         }
         return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
     }
 
-    public IFluidState getFluidState(BlockState state) {
+    public FluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state);
     }
 
@@ -136,8 +136,8 @@ public class BranchBlock extends SixWayBlock implements IWaterLoggable {
 
     @Override
     public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
-        if(ItemStackUtils.isInGroup(this.asItem(), group)) {
-            int targetIndex = ItemStackUtils.findIndexOfItem(Items.COAL_ORE, items);
+        if(ItemStackUtil.isInGroup(this.asItem(), group)) {
+            int targetIndex = ItemStackUtil.findIndexOfItem(Items.COAL_ORE, items);
             if(targetIndex != -1) {
                 items.add(targetIndex + 1, new ItemStack(this));
             } else {
