@@ -92,7 +92,7 @@ While you can compile from source, you can always download the latest releases r
 
 Stable releases of Sap ready to be consumed by the public!
 
-##### 1.15 - [*`0.2.2`*](https://github.com/yurisuika/Sap/releases/tag/0.2.2)
+##### 1.15 - [*`0.2.4`*](https://github.com/yurisuika/Sky/releases/download/2.2.4/sky-1.15.2-2.2.4.jar)
 
 ## PLANNED FEATURES
 
