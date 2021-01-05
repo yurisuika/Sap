@@ -28,7 +28,7 @@ archivesBaseName = 'sap'
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    mappings channel: 'snapshot', version: "${mapping}-1.15.1"
+    mappings channel: 'snapshot', version: "${mapping}-1.16.3"
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -67,8 +67,8 @@ mixin {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:' + minecraft_version + '-' + forge_version
-    implementation fg.deobf("curse.maven:abnormals-core:2980113")
-    implementation fg.deobf("com.terraforged:TerraForged:1.15.2-0.1.3-312")
+    implementation fg.deobf("curse.maven:abnormals-core:3154969")
+    implementation fg.deobf("curse.maven:TerraForged:3155575")
     compile 'org.spongepowered:mixin:0.8.2'
 }
 

@@ -3,37 +3,15 @@ package com.yurisuika.sap.common.world.biome;
 import java.util.List;
 
 import com.yurisuika.sap.core.registry.SapBlocks;
-import com.yurisuika.sap.core.registry.SapFeatures;
-import com.google.common.collect.ImmutableList;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.GenerationStage.Decoration;
-import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
+import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
-import net.minecraft.world.gen.feature.BlockStateFeatureConfig;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.DecoratedFeatureConfig;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.MultipleRandomFeatureConfig;
-import net.minecraft.world.gen.feature.NoFeatureConfig;
-import net.minecraft.world.gen.feature.SeaGrassConfig;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
-import net.minecraft.world.gen.feature.TwoFeatureChoiceConfig;
+import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
+import net.minecraft.world.gen.feature.FeatureSpread;
+import net.minecraft.world.gen.feature.TwoLayerFeature;
 import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.placement.ChanceConfig;
-import net.minecraft.world.gen.placement.CountRangeConfig;
-import net.minecraft.world.gen.placement.FrequencyConfig;
-import net.minecraft.world.gen.placement.HeightWithChanceConfig;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
-import net.minecraftforge.fml.ModList;
+import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
 public class SapBiomeFeatures {
 	public static BlockState ALDER_LOG = SapBlocks.ALDER_LOG.get().getDefaultState();
@@ -207,631 +185,460 @@ public class SapBiomeFeatures {
 	public static BlockState YEW_LOG = SapBlocks.YEW_LOG.get().getDefaultState();
 	public static BlockState YEW_LEAVES = SapBlocks.YEW_LEAVES.get().getDefaultState();
 
-	public static final TreeFeatureConfig ALDER_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig ALDER_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(ALDER_LOG),
 					new SimpleBlockStateProvider(ALDER_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.ALDER_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig ALMOND_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig ALMOND_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(ALMOND_LOG),
 					new SimpleBlockStateProvider(ALMOND_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.ALMOND_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig APPLE_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig APPLE_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(APPLE_LOG),
 					new SimpleBlockStateProvider(APPLE_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.APPLE_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig APRICOT_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig APRICOT_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(APRICOT_LOG),
 					new SimpleBlockStateProvider(APRICOT_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.APRICOT_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig ASH_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig ASH_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(ASH_LOG),
 					new SimpleBlockStateProvider(ASH_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.ASH_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig ASPEN_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig ASPEN_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(ASPEN_LOG),
 					new SimpleBlockStateProvider(ASPEN_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.ASPEN_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig AVOCADO_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig AVOCADO_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(AVOCADO_LOG),
 					new SimpleBlockStateProvider(AVOCADO_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.AVOCADO_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig BALSA_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig BALSA_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(BALSA_LOG),
 					new SimpleBlockStateProvider(BALSA_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.BALSA_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig BAY_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig BAY_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(BAY_LOG),
 					new SimpleBlockStateProvider(BAY_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.BAY_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig BEECH_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig BEECH_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(BEECH_LOG),
 					new SimpleBlockStateProvider(BEECH_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.BEECH_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig BLACKWOOD_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig BLACKWOOD_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(BLACKWOOD_LOG),
 					new SimpleBlockStateProvider(BLACKWOOD_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.BLACKWOOD_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig CEDAR_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig CEDAR_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(CEDAR_LOG),
 					new SimpleBlockStateProvider(CEDAR_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.CEDAR_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig CINNAMON_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig CINNAMON_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(CINNAMON_LOG),
 					new SimpleBlockStateProvider(CINNAMON_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.CINNAMON_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig CHERRY_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig CHERRY_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(CHERRY_LOG),
 					new SimpleBlockStateProvider(CHERRY_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.CHERRY_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig CHESTNUT_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig CHESTNUT_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(CHESTNUT_LOG),
 					new SimpleBlockStateProvider(CHESTNUT_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.CHESTNUT_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig CLOVE_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig CLOVE_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(CLOVE_LOG),
 					new SimpleBlockStateProvider(CLOVE_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.CLOVE_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig COTTONWOOD_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig COTTONWOOD_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(COTTONWOOD_LOG),
 					new SimpleBlockStateProvider(COTTONWOOD_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.COTTONWOOD_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig CYPRESS_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig CYPRESS_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(CYPRESS_LOG),
 					new SimpleBlockStateProvider(CYPRESS_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.CYPRESS_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig ELM_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig ELM_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(ELM_LOG),
 					new SimpleBlockStateProvider(ELM_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.ELM_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig FIG_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig FIG_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(FIG_LOG),
 					new SimpleBlockStateProvider(FIG_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.FIG_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig FIR_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig FIR_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(FIR_LOG),
 					new SimpleBlockStateProvider(FIR_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.FIR_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig GINKGO_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig GINKGO_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(GINKGO_LOG),
 					new SimpleBlockStateProvider(GINKGO_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.GINKGO_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig GUM_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig GUM_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(GUM_LOG),
 					new SimpleBlockStateProvider(GUM_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.GUM_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig HAZEL_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig HAZEL_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(HAZEL_LOG),
 					new SimpleBlockStateProvider(HAZEL_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.HAZEL_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig HAWTHORN_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig HAWTHORN_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(HAWTHORN_LOG),
 					new SimpleBlockStateProvider(HAWTHORN_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.HAWTHORN_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig HEMLOCK_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig HEMLOCK_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(HEMLOCK_LOG),
 					new SimpleBlockStateProvider(HEMLOCK_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.HEMLOCK_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig HICKORY_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig HICKORY_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(HICKORY_LOG),
 					new SimpleBlockStateProvider(HICKORY_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.HICKORY_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig HORNBEAM_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig HORNBEAM_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(HORNBEAM_LOG),
 					new SimpleBlockStateProvider(HORNBEAM_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.HORNBEAM_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig JUNIPER_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig JUNIPER_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(JUNIPER_LOG),
 					new SimpleBlockStateProvider(JUNIPER_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.JUNIPER_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig LARCH_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig LARCH_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(LARCH_LOG),
 					new SimpleBlockStateProvider(LARCH_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.LARCH_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig LAUREL_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig LAUREL_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(LAUREL_LOG),
 					new SimpleBlockStateProvider(LAUREL_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.LAUREL_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig LEMON_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig LEMON_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(LEMON_LOG),
 					new SimpleBlockStateProvider(LEMON_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.LEMON_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig LIME_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig LIME_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(LIME_LOG),
 					new SimpleBlockStateProvider(LIME_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.LIME_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig LINDEN_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig LINDEN_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(LINDEN_LOG),
 					new SimpleBlockStateProvider(LINDEN_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.LINDEN_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig LOCUST_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig LOCUST_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(LOCUST_LOG),
 					new SimpleBlockStateProvider(LOCUST_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.LOCUST_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig MACADAMIA_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig MACADAMIA_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(MACADAMIA_LOG),
 					new SimpleBlockStateProvider(MACADAMIA_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.MACADAMIA_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig MAHOGANY_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig MAHOGANY_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(MAHOGANY_LOG),
 					new SimpleBlockStateProvider(MAHOGANY_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.MAHOGANY_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig MANGO_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig MANGO_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(MANGO_LOG),
 					new SimpleBlockStateProvider(MANGO_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.MANGO_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig MAPLE_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig MAPLE_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(MAPLE_LOG),
 					new SimpleBlockStateProvider(MAPLE_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.MAPLE_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig MESQUITE_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig MESQUITE_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(MESQUITE_LOG),
 					new SimpleBlockStateProvider(MESQUITE_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.MESQUITE_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig MULBERRY_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig MULBERRY_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(MULBERRY_LOG),
 					new SimpleBlockStateProvider(MULBERRY_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.MULBERRY_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig OLIVE_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig OLIVE_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(OLIVE_LOG),
 					new SimpleBlockStateProvider(OLIVE_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.OLIVE_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig ORANGE_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig ORANGE_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(ORANGE_LOG),
 					new SimpleBlockStateProvider(ORANGE_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.ORANGE_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig PEACH_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig PEACH_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(PEACH_LOG),
 					new SimpleBlockStateProvider(PEACH_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.PEACH_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig PEAR_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig PEAR_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(PEAR_LOG),
 					new SimpleBlockStateProvider(PEAR_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.PEAR_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig PECAN_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig PECAN_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(PECAN_LOG),
 					new SimpleBlockStateProvider(PECAN_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.PECAN_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig PINE_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig PINE_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(PINE_LOG),
 					new SimpleBlockStateProvider(PINE_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.PINE_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig PLUM_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig PLUM_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(PLUM_LOG),
 					new SimpleBlockStateProvider(PLUM_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.PLUM_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig POPLAR_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig POPLAR_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(POPLAR_LOG),
 					new SimpleBlockStateProvider(POPLAR_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.POPLAR_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig REDWOOD_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig REDWOOD_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(REDWOOD_LOG),
 					new SimpleBlockStateProvider(REDWOOD_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.REDWOOD_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig ROSEWOOD_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig ROSEWOOD_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(ROSEWOOD_LOG),
 					new SimpleBlockStateProvider(ROSEWOOD_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.ROSEWOOD_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig SASSAFRAS_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig SASSAFRAS_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(SASSAFRAS_LOG),
 					new SimpleBlockStateProvider(SASSAFRAS_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.SASSAFRAS_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig SYCAMORE_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig SYCAMORE_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(SYCAMORE_LOG),
 					new SimpleBlockStateProvider(SYCAMORE_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.SYCAMORE_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig TEAK_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig TEAK_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(TEAK_LOG),
 					new SimpleBlockStateProvider(TEAK_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.TEAK_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig WALNUT_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig WALNUT_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(WALNUT_LOG),
 					new SimpleBlockStateProvider(WALNUT_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.WALNUT_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig WILLOW_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig WILLOW_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(WILLOW_LOG),
 					new SimpleBlockStateProvider(WILLOW_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.WILLOW_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
-	public static final TreeFeatureConfig YEW_TREE_CONFIG = (
-			new TreeFeatureConfig.Builder(
+	public static final BaseTreeFeatureConfig YEW_TREE_CONFIG = (
+			new BaseTreeFeatureConfig.Builder(
 					new SimpleBlockStateProvider(YEW_LOG),
 					new SimpleBlockStateProvider(YEW_LEAVES),
-					new BlobFoliagePlacer(3, 0)))
-			.baseHeight(5)
-			.heightRandA(3)
-			.foliageHeight(3)
-			.maxWaterDepth(1)
-			.setSapling((net.minecraftforge.common.IPlantable)SapBlocks.YEW_SAPLING.get()).build();
+					new BlobFoliagePlacer(FeatureSpread.func_242252_a(0), FeatureSpread.func_242252_a(0), 0),
+					new StraightTrunkPlacer(0, 0, 0),
+					new TwoLayerFeature(0, 0, 0))).setIgnoreVines().func_236702_a_(Heightmap.Type.MOTION_BLOCKING).build();
 
 }

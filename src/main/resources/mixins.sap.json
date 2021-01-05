@@ -4,15 +4,11 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "sap.refmap.json",
   "mixins": [
+    "common.items.MixinAbnormalsSignItem",
     "world.MixinFoliageColors",
-    "world.biome.MixinSwampBiome",
-    "world.biome.MixinSwampHillsBiome",
-    "world.biome.MixinDarkForestBiome",
-    "world.biome.MixinDarkForestHillsBiome",
-    "world.dimension.MixinOverworldDimension",
+    "world.biome.MixinBiomeAmbience",
+    "world.biome.MixinBiomeMaker",
     "world.biome.MixinBiome",
-    "mod.biome.MixinMarshland",
-    "mod.biome.MixinColdMarshland"
   ],
   "client": [
     "client.renderer.color.MixinBlockColors",

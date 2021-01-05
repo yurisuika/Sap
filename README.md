@@ -28,14 +28,18 @@ While Optifine does not current support loading assets from other mods, you can 
 
 ## CHANGELOG
 
-##### 0.2.4
+##### 0.3.0
 
-* Branches no longer connect to leaves!
-* Branches and twigs now only connect to ground blocks downwards!
+* 1.16!
 
 <details><summary>
 CLICK HERE TO SEE PAST LOGS!
 </summary>
+
+##### 0.2.4
+
+* Branches no longer connect to leaves!
+* Branches and twigs now only connect to ground blocks downwards!
 
 ##### 0.2.3
 
@@ -92,6 +96,11 @@ While you can compile from source, you can always download the latest releases r
 
 Stable releases of Sap ready to be consumed by the public!
 
+<<<<<<< Updated upstream
+=======
+##### 1.16 - [*`0.3.0`*](https://github.com/yurisuika/Sky/releases/download/0.3.0/sky-1.16.4-0.3.0.jar)
+
+>>>>>>> Stashed changes
 ##### 1.15 - [*`0.2.4`*](https://github.com/yurisuika/Sky/releases/download/0.2.4/sky-1.15.2-0.2.4.jar)
 
 ## PLANNED FEATURES

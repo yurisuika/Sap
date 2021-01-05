@@ -2,134 +2,75 @@ package com.yurisuika.sap.core.registry;
 
 import com.yurisuika.sap.common.world.gen.feature.*;
 
+import com.yurisuika.sap.core.Sap;
+import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 
 @Mod.EventBusSubscriber(modid = "sap", bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SapFeatures {
 
-    public static final Feature<TreeFeatureConfig> ALDER_TREE 		  = new AlderTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> ALMOND_TREE 	      = new AlmondTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> APPLE_TREE 		  = new AppleTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> APRICOT_TREE 	  = new ApricotTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> ASH_TREE 		  = new AshTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> ASPEN_TREE 		  = new AspenTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> AVOCADO_TREE 	  = new AvocadoTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> BALSA_TREE 		  = new BalsaTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> BAY_TREE 		  = new BayTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> BEECH_TREE 		  = new BeechTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> BLACKWOOD_TREE 	  = new BlackwoodTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> CEDAR_TREE 		  = new CedarTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> CHERRY_TREE 		  = new CherryTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> CHESTNUT_TREE 	  = new ChestnutTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> CINNAMON_TREE 	  = new CinnamonTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> CLOVE_TREE 		  = new CloveTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> COTTONWOOD_TREE    = new CottonwoodTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> CYPRESS_TREE   	  = new CypressTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> ELM_TREE 	   	  = new ElmTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> FIG_TREE 		  = new FigTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> FIR_TREE 	   	  = new FirTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> GINKGO_TREE 		  = new GinkgoTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> GUM_TREE 		  = new GumTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> HAZEL_TREE 	   	  = new HazelTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> HAWTHORN_TREE 	  = new HawthornTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> HEMLOCK_TREE   	  = new HemlockTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> HICKORY_TREE   	  = new HickoryTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> HORNBEAM_TREE  	  = new HornbeamTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> JUNIPER_TREE 	  = new JuniperTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> LARCH_TREE 	   	  = new LarchTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> LAUREL_TREE 	   	  = new LaurelTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> LEMON_TREE 		  = new LemonTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> LIME_TREE 		  = new LimeTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> LINDEN_TREE 		  = new LindenTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> LOCUST_TREE 		  = new LocustTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> MACADAMIA_TREE     = new MacadamiaTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> MAHOGANY_TREE 	  = new MahoganyTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> MANGO_TREE 	      = new MangoTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> MAPLE_TREE 		  = new MapleTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> MESQUITE_TREE 	  = new MesquiteTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> MULBERRY_TREE 	  = new MulberryTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> OLIVE_TREE 		  = new OliveTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> ORANGE_TREE 		  = new OrangeTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> PEACH_TREE 		  = new PeachTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> PEAR_TREE 		  = new PearTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> PECAN_TREE 		  = new PecanTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> PINE_TREE 	      = new PineTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> PLUM_TREE 		  = new PlumTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> POPLAR_TREE 		  = new PoplarTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> REDWOOD_TREE 	  = new RedwoodTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> ROSEWOOD_TREE 	  = new RosewoodTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> SASSAFRAS_TREE 	  = new SassafrasTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> SYCAMORE_TREE 	  = new SycamoreTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> TEAK_TREE 		  = new TeakTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> WALNUT_TREE 		  = new WalnutTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> WILLOW_TREE 		  = new WillowTreeFeature(TreeFeatureConfig::func_227338_a_);
-    public static final Feature<TreeFeatureConfig> YEW_TREE 		  = new YewTreeFeature(TreeFeatureConfig::func_227338_a_);
+    public static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(ForgeRegistries.FEATURES, Sap.MODID);
 
-    @SubscribeEvent
-    public static void registerFeatures(RegistryEvent.Register<Feature<?>> event) {
-        event.getRegistry().registerAll(
-                ALDER_TREE.setRegistryName("alder_tree"),
-                ALMOND_TREE.setRegistryName("almond_tree"),
-                APPLE_TREE.setRegistryName("apple_tree"),
-                APRICOT_TREE.setRegistryName("apricot_tree"),
-                ASH_TREE.setRegistryName("ash_tree"),
-                ASPEN_TREE.setRegistryName("aspen_tree"),
-                AVOCADO_TREE.setRegistryName("avocado_tree"),
-                BALSA_TREE.setRegistryName("balsa_tree"),
-                BAY_TREE.setRegistryName("bay_tree"),
-                BEECH_TREE.setRegistryName("beech_tree"),
-                BLACKWOOD_TREE.setRegistryName("blackwood_tree"),
-                CEDAR_TREE.setRegistryName("cedar_tree"),
-                CHERRY_TREE.setRegistryName("cherry_tree"),
-                CHESTNUT_TREE.setRegistryName("chestnut_tree"),
-                CINNAMON_TREE.setRegistryName("cinnamon_tree"),
-                CLOVE_TREE.setRegistryName("clove_tree"),
-                COTTONWOOD_TREE.setRegistryName("cottonwood_tree"),
-                CYPRESS_TREE.setRegistryName("cypress_tree"),
-                ELM_TREE.setRegistryName("elm_tree"),
-                FIR_TREE.setRegistryName("fir_tree"),
-                FIG_TREE.setRegistryName("fig_tree"),
-                GINKGO_TREE.setRegistryName("ginkgo_tree"),
-                GUM_TREE.setRegistryName("gum_tree"),
-                HAZEL_TREE.setRegistryName("hazel_tree"),
-                HAWTHORN_TREE.setRegistryName("hawthorn_tree"),
-                HEMLOCK_TREE.setRegistryName("hemlock_tree"),
-                HICKORY_TREE.setRegistryName("hickory_tree"),
-                HORNBEAM_TREE.setRegistryName("hornbeam_tree"),
-                JUNIPER_TREE.setRegistryName("juniper_tree"),
-                LARCH_TREE.setRegistryName("larch_tree"),
-                LAUREL_TREE.setRegistryName("laurel_tree"),
-                LEMON_TREE.setRegistryName("lemon_tree"),
-                LIME_TREE.setRegistryName("lime_tree"),
-                LINDEN_TREE.setRegistryName("linden_tree"),
-                LOCUST_TREE.setRegistryName("locust_tree"),
-                MACADAMIA_TREE.setRegistryName("macadamia_tree"),
-                MAHOGANY_TREE.setRegistryName("mahogany_tree"),
-                MANGO_TREE.setRegistryName("mango_tree"),
-                MAPLE_TREE.setRegistryName("maple_tree"),
-                MESQUITE_TREE.setRegistryName("mesquite_tree"),
-                MULBERRY_TREE.setRegistryName("mulberry_tree"),
-                OLIVE_TREE.setRegistryName("olive_tree"),
-                ORANGE_TREE.setRegistryName("orange_tree"),
-                PEACH_TREE.setRegistryName("peach_tree"),
-                PEAR_TREE.setRegistryName("pear_tree"),
-                PECAN_TREE.setRegistryName("pecan_tree"),
-                PINE_TREE.setRegistryName("pine_tree"),
-                PLUM_TREE.setRegistryName("plum_tree"),
-                POPLAR_TREE.setRegistryName("poplar_tree"),
-                REDWOOD_TREE.setRegistryName("redwood_tree"),
-                ROSEWOOD_TREE.setRegistryName("rosewood_tree"),
-                SASSAFRAS_TREE.setRegistryName("sassafras_tree"),
-                SYCAMORE_TREE.setRegistryName("sycamore_tree"),
-                TEAK_TREE.setRegistryName("teak_tree"),
-                WALNUT_TREE.setRegistryName("walnut_tree"),
-                WILLOW_TREE.setRegistryName("willow_tree"),
-                YEW_TREE.setRegistryName("yew_tree")
-        );
-    }
-	
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> ALDER_TREE 		  = FEATURES.register("alder_tree", () -> new AlderTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> ALMOND_TREE 	      = FEATURES.register("almond_tree", () -> new AlmondTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> APPLE_TREE 		  = FEATURES.register("apple_tree", () -> new AppleTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> APRICOT_TREE 	  = FEATURES.register("apricot_tree", () -> new ApricotTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> ASH_TREE 		  = FEATURES.register("ash_tree", () -> new AshTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> ASPEN_TREE 		  = FEATURES.register("aspen_tree", () -> new AspenTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> AVOCADO_TREE 	  = FEATURES.register("avocado_tree", () -> new AvocadoTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> BALSA_TREE 		  = FEATURES.register("balsa_tree", () -> new BalsaTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> BAY_TREE 		  = FEATURES.register("bay_tree", () -> new BayTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> BEECH_TREE 		  = FEATURES.register("beech_tree", () -> new BeechTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> BLACKWOOD_TREE 	  = FEATURES.register("blackwood_tree", () -> new BlackwoodTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> CEDAR_TREE 		  = FEATURES.register("cedar_tree", () -> new CedarTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> CHERRY_TREE 		  = FEATURES.register("cherry_tree", () -> new CherryTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> CHESTNUT_TREE 	  = FEATURES.register("chestnut_tree", () -> new ChestnutTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> CINNAMON_TREE 	  = FEATURES.register("cinnamon_tree", () -> new CinnamonTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> CLOVE_TREE 		  = FEATURES.register("clove_tree", () -> new CloveTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> COTTONWOOD_TREE    = FEATURES.register("cottonwood_tree", () -> new CottonwoodTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> CYPRESS_TREE   	  = FEATURES.register("cypress_tree", () -> new CypressTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> ELM_TREE 	   	  = FEATURES.register("elm_tree", () -> new ElmTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> FIG_TREE 		  = FEATURES.register("fig_tree", () -> new FigTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> FIR_TREE 	   	  = FEATURES.register("fir_tree", () -> new FirTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> GINKGO_TREE 		  = FEATURES.register("ginkgo_tree", () -> new GinkgoTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> GUM_TREE 		  = FEATURES.register("hum_tree", () -> new GumTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> HAZEL_TREE 	   	  = FEATURES.register("hazel_tree", () -> new HazelTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> HAWTHORN_TREE 	  = FEATURES.register("hawthorn_tree", () -> new HawthornTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> HEMLOCK_TREE   	  = FEATURES.register("hemlock_tree", () -> new HemlockTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> HICKORY_TREE   	  = FEATURES.register("hickory_tree", () -> new HickoryTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> HORNBEAM_TREE  	  = FEATURES.register("hornbeam_tree", () -> new HornbeamTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> JUNIPER_TREE 	  = FEATURES.register("juniper_tree", () -> new JuniperTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> LARCH_TREE 	   	  = FEATURES.register("larch_tree", () -> new LarchTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> LAUREL_TREE 	   	  = FEATURES.register("laurel_tree", () -> new LaurelTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> LEMON_TREE 		  = FEATURES.register("lemon_tree", () -> new LemonTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> LIME_TREE 		  = FEATURES.register("lime_tree", () -> new LimeTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> LINDEN_TREE 		  = FEATURES.register("linden_tree", () -> new LindenTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> LOCUST_TREE 		  = FEATURES.register("locust_tree", () -> new LocustTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> MACADAMIA_TREE     = FEATURES.register("macadamia_tree", () -> new MacadamiaTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> MAHOGANY_TREE 	  = FEATURES.register("mahogany_tree", () -> new MahoganyTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> MANGO_TREE 	      = FEATURES.register("mango_tree", () -> new MangoTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> MAPLE_TREE 		  = FEATURES.register("maple_tree", () -> new MapleTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> MESQUITE_TREE 	  = FEATURES.register("mesquite_tree", () -> new MesquiteTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> MULBERRY_TREE 	  = FEATURES.register("mulberry_tree", () -> new MulberryTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> OLIVE_TREE 		  = FEATURES.register("olive_tree", () -> new OliveTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> ORANGE_TREE 		  = FEATURES.register("orange_tree", () -> new OrangeTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> PEACH_TREE 		  = FEATURES.register("peach_tree", () -> new PeachTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> PEAR_TREE 		  = FEATURES.register("pear_tree", () -> new PearTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> PECAN_TREE 		  = FEATURES.register("pecan_tree", () -> new PecanTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> PINE_TREE 	      = FEATURES.register("pine_tree", () -> new PineTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> PLUM_TREE 		  = FEATURES.register("plum_tree", () -> new PlumTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> POPLAR_TREE 		  = FEATURES.register("poplar_tree", () -> new PoplarTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> REDWOOD_TREE 	  = FEATURES.register("redwood_tree", () -> new RedwoodTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> ROSEWOOD_TREE 	  = FEATURES.register("rosewood_tree", () -> new RosewoodTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> SASSAFRAS_TREE 	  = FEATURES.register("sassafras_tree", () -> new SassafrasTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> SYCAMORE_TREE 	  = FEATURES.register("sycamore_tree", () -> new SycamoreTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> TEAK_TREE 		  = FEATURES.register("teak_tree", () -> new TeakTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> WALNUT_TREE 		  = FEATURES.register("walnut_tree", () -> new WalnutTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> WILLOW_TREE 		  = FEATURES.register("willow_tree", () -> new WillowTreeFeature(BaseTreeFeatureConfig.CODEC));
+    public static final RegistryObject<Feature<BaseTreeFeatureConfig>> YEW_TREE 		  = FEATURES.register("yew_tree", () -> new YewTreeFeature(BaseTreeFeatureConfig.CODEC));
+
 }

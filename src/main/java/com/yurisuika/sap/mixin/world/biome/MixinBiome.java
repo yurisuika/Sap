@@ -12,7 +12,6 @@ import org.spongepowered.asm.mixin.Shadow;
 @Mixin(Biome.class)
 public class MixinBiome {
 
-    @Shadow
     @Final
     private float temperature;
     private int waterColor;
@@ -38,6 +37,7 @@ public class MixinBiome {
      * @reason
      * Water Color
      */
+    @OnlyIn(Dist.CLIENT)
     @Overwrite()
     public final int getWaterColor() {
         return 16777215;
@@ -49,6 +49,7 @@ public class MixinBiome {
      * @reason
      * Water Fog Color
      */
+    @OnlyIn(Dist.CLIENT)
     @Overwrite()
     public final int getWaterFogColor() {
         return 9609378;
