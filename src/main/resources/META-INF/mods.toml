@@ -7,7 +7,7 @@ issueTrackerURL="https://github.com/yurisuika/Sap/issues"
 modId="sap"
 version="0.3.0"
 displayName="Sap"
-updateJSONURL="https://github.com/yurisuika/Sap/blob/master/updates.json"
+updateJSONURL="https://raw.githubusercontent.com/yurisuika/Sap/blob/master/updates.json"
 displayURL="https://github.com/yurisuika/Sap"
 logoFile="pack.png"
 credits="yurisuika"
@@ -15,30 +15,29 @@ authors="yurisuika"
 description="Sap - a realistic flora mod."
 
 [[dependencies.sap]]
-    modId="forge"
-    mandatory=true
-    versionRange="[35,)"
-    ordering="NONE"
-    side="BOTH"
+modId="forge"
+mandatory=true
+versionRange="[35,)"
+ordering="NONE"
+side="BOTH"
 
 [[dependencies.sap]]
-    modId="abnormals_core"
-    mandatory=true
-    versionRange="[3.0.5,)"
-    ordering="AFTER"
-    side="BOTH"
+modId="abnormals_core"
+mandatory=true
+versionRange="[3.0.5,)"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.sap]]
-    modId="terraforged"
-    mandatory=true
-    versionRange="[0.1.3,)"
-    ordering="AFTER"
-    side="BOTH"
+modId="terraforged"
+mandatory=true
+versionRange="[0.1.3,)"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.sap]]
-    modId="optifine"
-    mandatory=false
-    versionRange="[1.0.0,)"
-    ordering="BEFORE"
-    side="BOTH"
-
+modId="optifine"
+mandatory=false
+versionRange="[1.0.0,)"
+ordering="BEFORE"
+side="BOTH"
