@@ -122,7 +122,7 @@ Get all the hot tips and tricks here!
 
 #### DEPENDENCIES
 
-Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library as a dependency!
+Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library and *[TerraForged](https://github.com/TerraForged/TerraForged)* as dependencies!
 
 #### RESOURCEPACKS
 
