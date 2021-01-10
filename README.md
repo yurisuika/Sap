@@ -28,14 +28,22 @@ While Optifine does not current support loading assets from other mods, you can 
 
 ## CHANGELOG
 
-##### 0.2.4
+##### 0.3.1
 
-* Branches no longer connect to leaves!
-* Branches and twigs now only connect to ground blocks downwards!
+* Fixed twig post placement update.
 
 <details><summary>
 CLICK HERE TO SEE PAST LOGS!
 </summary>
+
+##### 0.3.0
+
+* 1.16!
+
+##### 0.2.4
+
+* Branches no longer connect to leaves!
+* Branches and twigs now only connect to ground blocks downwards!
 
 ##### 0.2.3
 
@@ -68,7 +76,7 @@ CLICK HERE TO SEE PAST LOGS!
 
 ### Source Building
 
-To build from source you will need have JDK 8  to compile and, optionally, Git to clone the repository. Otherwise, download the archive and just run `./gradlew build` from the root project folder.
+To build from source you will need have JDK 8 to compile and, optionally, Git to clone the repository. Otherwise, download the archive and just run `./gradlew build` from the root project folder.
 
 #### Commands
 
@@ -91,6 +99,8 @@ While you can compile from source, you can always download the latest releases r
 #### Latest Builds
 
 Stable releases of Sap ready to be consumed by the public!
+
+##### 1.16 - [*`0.3.0`*](https://github.com/yurisuika/Sky/releases/download/0.3.0/sky-1.16.4-0.3.0.jar)
 
 ##### 1.15 - [*`0.2.4`*](https://github.com/yurisuika/Sky/releases/download/0.2.4/sky-1.15.2-0.2.4.jar)
 
@@ -116,7 +126,7 @@ Get all the hot tips and tricks here!
 
 #### DEPENDENCIES
 
-Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library as a dependency!
+Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library and *[TerraForged](https://github.com/TerraForged/TerraForged)* as dependencies!
 
 #### RESOURCEPACKS
 

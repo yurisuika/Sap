@@ -82,7 +82,7 @@ public class TwigBlock extends SixWayBlock implements IWaterLoggable {
         else {
             if (stateIn.isValidPosition(worldIn, currentPos)) {
                 Block block = facingState.getBlock();
-                boolean flag = block.isIn(BlockTags.LOGS);
+                boolean flag = block.isIn(BlockTags.LOGS) || block.isIn(BlockTags.LEAVES);
                 return stateIn.with(FACING_TO_PROPERTY_MAP.get(facing), flag);
             }
             else if (!stateIn.isValidPosition(worldIn, currentPos)) {
@@ -107,7 +107,6 @@ public class TwigBlock extends SixWayBlock implements IWaterLoggable {
     public IFluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state);
     }
-
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(NORTH, EAST, SOUTH, WEST, UP, DOWN, WATERLOGGED);
