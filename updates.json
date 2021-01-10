@@ -1,9 +1,11 @@
 {
   "homepage": "https://github.com/yurisuika/Sap",
   "1.16.4": {
+    "0.3.1": "Fixed twig post placement update.",
     "0.3.0": "1.16!"
   },
   "1.15.2": {
+    "0.3.1": "Fixed twig post placement update.",
     "0.2.4": "Branches no longer connect to leaves! Branches and twigs now only connect to ground blocks downwards!",
     "0.2.3": "Revised textures!",
     "0.2.2": "Twigs are no longer climbable! This was making walking through a dense forest a little annoying. Fixes and improvements!",

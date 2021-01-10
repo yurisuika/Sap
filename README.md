@@ -28,13 +28,17 @@ While Optifine does not current support loading assets from other mods, you can 
 
 ## CHANGELOG
 
-##### 0.3.0
+##### 0.3.1
 
-* 1.16!
+* Fixed twig post placement update.
 
 <details><summary>
 CLICK HERE TO SEE PAST LOGS!
 </summary>
+
+##### 0.3.0
+
+* 1.16!
 
 ##### 0.2.4
 
