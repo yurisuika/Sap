@@ -10,11 +10,13 @@ While currently only available in the style of *[Isabella](https://github.com/yu
 
 While Optifine does not current support loading assets from other mods, you can either extract the shader data from the jar and put it in your pack to make Sap's blocks rustle in the wind or use the custom model pack to add them to your list. Be sure to toggle shaders to enable Optifine detects Sap's blocks, otherwise it will have loaded the shaders before detecting Sap's blocks!
 
+---
+
 ## FEATURES
 
 ### Trees
 
-#### Species (Including Vanilla)
+##### Species (Including Vanilla)
 
 * 57 species, bringing a total of 63 to Minecraft!
 
@@ -22,11 +24,15 @@ While Optifine does not current support loading assets from other mods, you can 
 
 * All have standard block and item sets, including boats and signs!
 
-#### Additional Features
+##### Additional Features
 
 * Branches and Twigs for all species. These allow for more realistic tree structures!
 
+---
+
 ## CHANGELOG
+
+### 1.16 Releases
 
 ##### 0.3.1
 
@@ -39,6 +45,17 @@ CLICK HERE TO SEE PAST LOGS!
 ##### 0.3.0
 
 * 1.16!
+</details>
+
+### 1.15 Releases
+
+##### 0.3.1
+
+* Fixed twig post placement update.
+
+<details><summary>
+CLICK HERE TO SEE PAST LOGS!
+</summary>
 
 ##### 0.2.4
 
@@ -72,6 +89,8 @@ CLICK HERE TO SEE PAST LOGS!
 * Initial release with a few trees and branches and twigs.
 </details>
 
+---
+
 ## DOWNLOADS
 
 ### Source Building
@@ -104,6 +123,8 @@ Stable releases of Sap ready to be consumed by the public!
 
 ##### 1.15 - [*`0.3.1`*](https://github.com/yurisuika/Sky/releases/download/0.3.1/sky-1.15.2-0.3.1.jar)
 
+---
+
 ## PLANNED FEATURES
 
 Sooner or later, this is what we plan to have in the mod!
@@ -114,11 +135,13 @@ Sooner or later, this is what we plan to have in the mod!
 * Crops Domesticated from Wild Plants
 * Food Items and Recipes
 
-#### Far Off
+#### Possible Additions
 
 * Advanced Sapling Propagation
 * Vanilla Style Textures
 * Generated Trees
+
+---
 
 ## LINKS
 
