@@ -2,6 +2,8 @@
     "parent": "block/door_bottom",
     "textures": {
         "bottom": "sap:block/teak_door_bottom",
-        "top": "sap:block/teak_door_top"
+        "bottom_side": "sap:block/teak_door_bottom_side",
+        "top": "sap:block/teak_door_top",
+        "top_side": "sap:block/teak_door_top_side"
     }
 }

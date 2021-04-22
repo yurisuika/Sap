@@ -1,6 +1,8 @@
 {
-    "parent": "block/fence_inventory",
-    "textures": {
-        "texture": "sap:block/juniper_planks"
-    }
+  "parent": "block/template_fence_inventory",
+  "textures": {
+		"rail": "sap:block/juniper_fence_rail",
+		"top": "sap:block/juniper_fence_top",
+		"texture": "sap:block/juniper_fence"
+	}
 }

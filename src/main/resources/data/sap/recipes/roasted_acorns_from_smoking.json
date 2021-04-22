@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "sap:acorns"
+  },
+  "result": "sap:roasted_acorns",
+  "experience": 0.1,
+  "cookingtime": 100
+}

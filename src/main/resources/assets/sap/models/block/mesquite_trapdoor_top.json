@@ -1,6 +1,7 @@
 {
-    "parent": "block/template_orientable_trapdoor_top",
-    "textures": {
-        "texture": "sap:block/mesquite_trapdoor"
-    }
+	"parent": "block/template_wooden_trapdoor_top",
+	"textures": {
+		"side": "sap:block/mesquite_door_top_side",
+		"texture": "sap:block/mesquite_trapdoor"
+	}
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "block/template_fence_gate",
-    "textures": {
-        "texture": "sap:block/mahogany_planks"
-    }
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "sap:block/mahogany_fence_gate"
+  }
 }

@@ -5,11 +5,13 @@ import java.util.Arrays;
 import com.yurisuika.sap.core.registry.SapBlocks;
 import com.minecraftabnormals.abnormals_core.core.util.DataUtil;
 
+import com.yurisuika.sap.core.registry.SapItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.color.BlockColors;
 import net.minecraft.client.renderer.color.ItemColors;
+import net.minecraft.util.IItemProvider;
 import net.minecraft.world.FoliageColors;
 import net.minecraft.world.biome.BiomeColors;
 
@@ -132,6 +134,46 @@ public class SapData {
 		DataUtil.registerCompostable(SapBlocks.WALNUT_SAPLING.get(), 0.30F);
 		DataUtil.registerCompostable(SapBlocks.WILLOW_SAPLING.get(), 0.30F);
 		DataUtil.registerCompostable(SapBlocks.YEW_SAPLING.get(), 0.30F);
+
+		//Items
+		DataUtil.registerCompostable((IItemProvider) SapItems.ALMONDS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_ALMONDS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.APRICOT.get(), 0.65F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ASH_BERRIES.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.AVOCADO.get(), 0.65F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.BEECHNUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_BEECHNUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.CHERRIES.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.CHESTNUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_CHESTNUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.CINNAMON.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.CLOVES.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.FIG.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.HAWTHORN_BERRIES.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.HAZELNUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_HAZELNUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.HICKORY_NUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_HICKORY_NUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.JUNIPER_BERRIES.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.LEMON.get(), 0.65F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.LIME.get(), 0.65F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.MACADAMIA_NUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_MACADAMIA_NUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.MANGO.get(), 0.65F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.MULBERRIES.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ACORNS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_ACORNS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.OLIVES.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ORANGE.get(), 0.65F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.PEACH.get(), 0.65F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.PEAR.get(), 0.65F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.PECANS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_PECANS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.PINE_NUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_PINE_NUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.PLUM.get(), 0.65F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.WALNUTS.get(), 0.30F);
+		DataUtil.registerCompostable((IItemProvider) SapItems.ROASTED_WALNUTS.get(), 0.30F);
 	}
 
 	public static void registerFlammables() {

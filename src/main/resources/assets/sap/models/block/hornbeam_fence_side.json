@@ -1,6 +1,7 @@
 {
-    "parent": "block/fence_side",
-    "textures": {
-        "texture": "sap:block/hornbeam_planks"
-    }
+  "parent": "block/template_fence_side",
+  "textures": {
+		"rail": "sap:block/hornbeam_fence_rail",
+		"texture": "sap:block/hornbeam_fence"
+	}
 }

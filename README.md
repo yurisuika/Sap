@@ -24,9 +24,15 @@ While Optifine does not current support loading assets from other mods, you can 
 
 * All have standard block and item sets, including boats and signs!
 
+* Branches and Twigs for all species. These allow for more realistic tree structures!
+
+* Many have food items that drop from leaves! Nuts can be roasted!
+
+* Sap now has sap!
+
 ##### Additional Features
 
-* Branches and Twigs for all species. These allow for more realistic tree structures!
+* Nothing yet...
 
 ---
 
@@ -34,13 +40,20 @@ While Optifine does not current support loading assets from other mods, you can 
 
 ### 1.16 Releases
 
-##### 0.3.1
+##### 0.3.2
 
-* Fixed twig post placement update.
+* Removed TerraForged Dependency.
+* Added food items for many species!
+* Bumped Abnormals Core version to 3.1.1.
+* Merged custom models into mod!
 
 <details><summary>
 CLICK HERE TO SEE PAST LOGS!
 </summary>
+
+##### 0.3.1
+
+* Fixed twig post placement update.
 
 ##### 0.3.0
 
@@ -119,9 +132,9 @@ While you can compile from source, you can always download the latest releases r
 
 Stable releases of Sap ready to be consumed by the public!
 
-##### 1.16 - [*`0.3.1`*](https://github.com/yurisuika/Sky/releases/download/0.3.1/sky-1.16.4-0.3.1.jar)
+##### 1.16 - [*`0.3.2`*](https://github.com/yurisuika/Sap/releases/download/0.3.21/sap-1.16.4-0.3.2.jar)
 
-##### 1.15 - [*`0.3.1`*](https://github.com/yurisuika/Sky/releases/download/0.3.1/sky-1.15.2-0.3.1.jar)
+##### 1.15 - [*`0.3.1`*](https://github.com/yurisuika/Sap/releases/download/0.3.1/sap-1.15.2-0.3.1.jar)
 
 ---
 
@@ -149,7 +162,9 @@ Get all the hot tips and tricks here!
 
 #### DEPENDENCIES
 
-Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library and *[TerraForged](https://github.com/TerraForged/TerraForged)* as dependencies!
+Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library as a dependency!
+
+Older versions may have different dependencies!
 
 #### RESOURCEPACKS
 

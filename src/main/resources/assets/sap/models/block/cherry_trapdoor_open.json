@@ -1,6 +1,7 @@
 {
-    "parent": "block/template_orientable_trapdoor_open",
-    "textures": {
-        "texture": "sap:block/cherry_trapdoor"
-    }
+	"parent": "block/template_wooden_trapdoor_open",
+	"textures": {
+		"side": "sap:block/cherry_door_top_side",
+		"texture": "sap:block/cherry_trapdoor"
+	}
 }

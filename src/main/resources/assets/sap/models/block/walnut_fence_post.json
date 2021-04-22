@@ -1,6 +1,7 @@
 {
-    "parent": "block/fence_post",
-    "textures": {
-        "texture": "sap:block/walnut_planks"
-    }
+  "parent": "block/template_fence_post",
+  "textures": {
+		"top": "sap:block/walnut_fence_top",
+		"texture": "sap:block/walnut_fence"
+	}
 }

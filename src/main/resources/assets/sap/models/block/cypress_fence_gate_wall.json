@@ -1,6 +1,6 @@
 {
-    "parent": "block/template_fence_gate_wall",
-    "textures": {
-        "texture": "sap:block/cypress_planks"
-    }
+  "parent": "block/template_fence_gate_wall",
+  "textures": {
+    "texture": "sap:block/cypress_fence_gate"
+  }
 }

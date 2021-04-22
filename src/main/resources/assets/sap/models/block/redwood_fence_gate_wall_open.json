@@ -1,6 +1,6 @@
 {
-    "parent": "block/template_fence_gate_wall_open",
-    "textures": {
-        "texture": "sap:block/redwood_planks"
-    }
+  "parent": "block/template_fence_gate_wall_open",
+  "textures": {
+    "texture": "sap:block/redwood_fence_gate"
+  }
 }

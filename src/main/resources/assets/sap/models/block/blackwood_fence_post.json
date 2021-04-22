@@ -1,6 +1,7 @@
 {
-    "parent": "block/fence_post",
-    "textures": {
-        "texture": "sap:block/blackwood_planks"
-    }
+  "parent": "block/template_fence_post",
+  "textures": {
+		"top": "sap:block/blackwood_fence_top",
+		"texture": "sap:block/blackwood_fence"
+	}
 }

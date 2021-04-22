@@ -2,6 +2,8 @@
     "parent": "block/door_bottom_rh",
     "textures": {
         "bottom": "sap:block/ginkgo_door_bottom",
-        "top": "sap:block/ginkgo_door_top"
+        "bottom_side": "sap:block/ginkgo_door_bottom_side",
+        "top": "sap:block/ginkgo_door_top",
+        "top_side": "sap:block/ginkgo_door_top_side"
     }
 }

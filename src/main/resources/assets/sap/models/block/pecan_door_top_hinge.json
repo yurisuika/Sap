@@ -2,6 +2,8 @@
     "parent": "block/door_top_rh",
     "textures": {
         "bottom": "sap:block/pecan_door_bottom",
-        "top": "sap:block/pecan_door_top"
+        "bottom_side": "sap:block/pecan_door_bottom_side",
+        "top": "sap:block/pecan_door_top",
+        "top_side": "sap:block/pecan_door_top_side"
     }
 }

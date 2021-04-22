@@ -1,6 +1,6 @@
 {
-    "parent": "block/template_fence_gate",
-    "textures": {
-        "texture": "sap:block/hickory_planks"
-    }
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "sap:block/hickory_fence_gate"
+  }
 }

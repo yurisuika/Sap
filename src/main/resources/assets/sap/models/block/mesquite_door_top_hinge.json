@@ -2,6 +2,8 @@
     "parent": "block/door_top_rh",
     "textures": {
         "bottom": "sap:block/mesquite_door_bottom",
-        "top": "sap:block/mesquite_door_top"
+        "bottom_side": "sap:block/mesquite_door_bottom_side",
+        "top": "sap:block/mesquite_door_top",
+        "top_side": "sap:block/mesquite_door_top_side"
     }
 }

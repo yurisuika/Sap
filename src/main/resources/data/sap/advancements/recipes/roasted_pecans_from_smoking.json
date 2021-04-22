@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sap:roasted_pecans_from_smoking"
+    ]
+  },
+  "criteria": {
+    "has_pecans": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "sap:pecans"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sap:roasted_pecans_from_smoking"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pecans",
+      "has_the_recipe"
+    ]
+  ]
+}

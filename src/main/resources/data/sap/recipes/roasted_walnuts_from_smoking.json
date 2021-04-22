@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "sap:walnuts"
+  },
+  "result": "sap:roasted_walnuts",
+  "experience": 0.1,
+  "cookingtime": 100
+}

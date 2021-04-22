@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "sap:pecans"
+  },
+  "result": "sap:roasted_pecans",
+  "experience": 0.1,
+  "cookingtime": 600
+}

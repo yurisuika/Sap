@@ -1,6 +1,7 @@
 {
-    "parent": "block/fence_side",
-    "textures": {
-        "texture": "sap:block/fir_planks"
-    }
+  "parent": "block/template_fence_side",
+  "textures": {
+		"rail": "sap:block/fir_fence_rail",
+		"texture": "sap:block/fir_fence"
+	}
 }

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sap:roasted_hazelnuts_from_campfire_cooking"
+    ]
+  },
+  "criteria": {
+    "has_hazelnuts": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "sap:hazelnuts"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sap:roasted_hazelnuts_from_campfire_cooking"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_hazelnuts",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,6 +1,8 @@
 {
-    "parent": "block/fence_inventory",
-    "textures": {
-        "texture": "sap:block/hemlock_planks"
-    }
+  "parent": "block/template_fence_inventory",
+  "textures": {
+		"rail": "sap:block/hemlock_fence_rail",
+		"top": "sap:block/hemlock_fence_top",
+		"texture": "sap:block/hemlock_fence"
+	}
 }

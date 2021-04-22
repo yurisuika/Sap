@@ -1,6 +1,8 @@
 {
-    "parent": "block/fence_inventory",
-    "textures": {
-        "texture": "sap:block/pear_planks"
-    }
+  "parent": "block/template_fence_inventory",
+  "textures": {
+		"rail": "sap:block/pear_fence_rail",
+		"top": "sap:block/pear_fence_top",
+		"texture": "sap:block/pear_fence"
+	}
 }

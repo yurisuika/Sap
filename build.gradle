@@ -67,8 +67,8 @@ mixin {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:' + minecraft_version + '-' + forge_version
-    implementation fg.deobf("curse.maven:abnormals-core:3154969")
-    implementation fg.deobf("curse.maven:TerraForged:3155575")
+    implementation fg.deobf("curse.maven:abnormals-core:3157757")
+    // implementation fg.deobf("curse.maven:TerraForged:3163463")
     compile 'org.spongepowered:mixin:0.8.2'
 }
 

@@ -1,6 +1,6 @@
 {
-    "parent": "block/template_fence_gate",
-    "textures": {
-        "texture": "sap:block/plum_planks"
-    }
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "sap:block/plum_fence_gate"
+  }
 }

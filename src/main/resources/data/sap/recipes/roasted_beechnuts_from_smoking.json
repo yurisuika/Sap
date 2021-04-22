@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "sap:beechnuts"
+  },
+  "result": "sap:roasted_beechnuts",
+  "experience": 0.1,
+  "cookingtime": 100
+}

@@ -3,7 +3,6 @@ package com.yurisuika.sap.common.block;
 import com.minecraftabnormals.abnormals_core.core.util.item.ItemStackUtil;
 
 import net.minecraft.block.*;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.*;
@@ -13,10 +12,8 @@ import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
-import net.minecraft.world.World;
 
 public class StrippedTwigBlock extends SixWayBlock implements IWaterLoggable {
 

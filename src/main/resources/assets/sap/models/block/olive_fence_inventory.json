@@ -1,6 +1,8 @@
 {
-    "parent": "block/fence_inventory",
-    "textures": {
-        "texture": "sap:block/olive_planks"
-    }
+  "parent": "block/template_fence_inventory",
+  "textures": {
+		"rail": "sap:block/olive_fence_rail",
+		"top": "sap:block/olive_fence_top",
+		"texture": "sap:block/olive_fence"
+	}
 }

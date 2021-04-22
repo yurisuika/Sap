@@ -3,7 +3,9 @@ package com.yurisuika.sap.core.registry;
 import com.yurisuika.sap.core.Sap;
 import com.minecraftabnormals.abnormals_core.core.util.registry.ItemSubRegistryHelper;
 
+import com.yurisuika.sap.core.other.SapFoods;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 
@@ -69,5 +71,80 @@ public class SapItems {
 	public static final RegistryObject WALNUT_BOAT 		= HELPER.createBoatItem("walnut", SapBlocks.WALNUT_PLANKS);
 	public static final RegistryObject WILLOW_BOAT 		= HELPER.createBoatItem("willow", SapBlocks.WILLOW_PLANKS);
 	public static final RegistryObject YEW_BOAT 		= HELPER.createBoatItem("yew", SapBlocks.YEW_PLANKS);
+
+	public static final RegistryObject SAP		 				= HELPER.createItem("sap", () -> new Item((new Item.Properties()).group(ItemGroup.MATERIALS)));
+
+	//ACACIA
+	//ALDER
+	public static final RegistryObject ALMONDS					= HELPER.createItem("almonds", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ALMONDS)));
+	public static final RegistryObject ROASTED_ALMONDS			= HELPER.createItem("roasted_almonds", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_ALMONDS)));
+	public static final RegistryObject APRICOT					= HELPER.createItem("apricot", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.APRICOT)));
+	public static final RegistryObject ASH_BERRIES				= HELPER.createItem("ash_berries", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ASH_BERRIES)));
+	//ASPEN
+	public static final RegistryObject AVOCADO					= HELPER.createItem("avocado", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.AVOCADO)));
+	//BALSA
+	//BANYAN
+	//BAY
+	public static final RegistryObject BEECHNUTS				= HELPER.createItem("beechnuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.BEECHNUTS)));
+	public static final RegistryObject ROASTED_BEECHNUTS		= HELPER.createItem("roasted_beechnuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_BEECHNUTS)));
+	//BIRCH
+	//BLACKWOOD
+	//CEDAR
+	public static final RegistryObject CHERRIES					= HELPER.createItem("cherries", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.CHERRIES)));
+	public static final RegistryObject CHESTNUTS				= HELPER.createItem("chestnuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.CHESTNUTS)));
+	public static final RegistryObject ROASTED_CHESTNUTS		= HELPER.createItem("roasted_chestnuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_CHESTNUTS)));
+	public static final RegistryObject CINNAMON					= HELPER.createItem("cinnamon", () -> new Item((new Item.Properties()).group(ItemGroup.MATERIALS)));
+	public static final RegistryObject CLOVES					= HELPER.createItem("cloves", () -> new Item((new Item.Properties()).group(ItemGroup.MATERIALS)));
+	//COTTONWOOD
+	//CYPRESS
+	//EBONY
+	//ELM
+	public static final RegistryObject FIG						= HELPER.createItem("fig", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.FIG)));
+	//FIR
+	//GINKGO
+	//GUM
+	public static final RegistryObject HAWTHORN_BERRIES			= HELPER.createItem("hawthorn_berries", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.HAWTHORN_BERRIES)));
+	public static final RegistryObject HAZELNUTS				= HELPER.createItem("hazelnuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.HAZELNUTS)));
+	public static final RegistryObject ROASTED_HAZELNUTS		= HELPER.createItem("roasted_hazelnuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_HAZELNUTS)));
+	//HEMLOCK
+	public static final RegistryObject HICKORY_NUTS				= HELPER.createItem("hickory_nuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.HICKORY_NUTS)));
+	public static final RegistryObject ROASTED_HICKORY_NUTS		= HELPER.createItem("roasted_hickory_nuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_HICKORY_NUTS)));
+	//HORNBEAM
+	public static final RegistryObject JUNIPER_BERRIES			= HELPER.createItem("juniper_berries", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.JUNIPER_BERRIES)));
+	//LARCH
+	//LAUREL
+	public static final RegistryObject LEMON					= HELPER.createItem("lemon", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.LEMON)));
+	public static final RegistryObject LIME						= HELPER.createItem("lime", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.LIME)));
+	//LINDEN
+	//LOCUST
+	public static final RegistryObject MACADAMIA_NUTS			= HELPER.createItem("macadamia_nuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.MACADAMIA_NUTS)));
+	public static final RegistryObject ROASTED_MACADAMIA_NUTS	= HELPER.createItem("roasted_macadamia_nuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_MACADAMIA_NUTS)));
+	//MAHOGANY
+	public static final RegistryObject MANGO					= HELPER.createItem("mango", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.MANGO)));
+	//MAPLE
+	//MESQUITE
+	public static final RegistryObject MULBERRIES				= HELPER.createItem("mulberries", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.MULBERRIES)));
+	public static final RegistryObject ACORNS					= HELPER.createItem("acorns", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ACORNS)));
+	public static final RegistryObject ROASTED_ACORNS			= HELPER.createItem("roasted_acorns", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_ACORNS)));
+	public static final RegistryObject OLIVES					= HELPER.createItem("olives", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.OLIVES)));
+	public static final RegistryObject ORANGE					= HELPER.createItem("orange", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ORANGE)));
+	public static final RegistryObject PEACH					= HELPER.createItem("peach", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.PEACH)));
+	public static final RegistryObject PEAR						= HELPER.createItem("pear", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.PEAR)));
+	public static final RegistryObject PECANS					= HELPER.createItem("pecans", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.PECANS)));
+	public static final RegistryObject ROASTED_PECANS			= HELPER.createItem("roasted_pecans", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_PECANS)));
+	public static final RegistryObject PINE_NUTS				= HELPER.createItem("pine_nuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.PINE_NUTS)));
+	public static final RegistryObject ROASTED_PINE_NUTS		= HELPER.createItem("roasted_pine_nuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_PINE_NUTS)));
+	public static final RegistryObject PLUM						= HELPER.createItem("plum", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.PLUM)));
+	//POPLAR
+	//REDWOOD
+	//ROSEWOOD
+	//SASSAFRAS
+	//SPRUCE
+	//SYCAMORE
+	//TEAK
+	public static final RegistryObject WALNUTS					= HELPER.createItem("walnuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.WALNUTS)));
+	public static final RegistryObject ROASTED_WALNUTS			= HELPER.createItem("roasted_walnuts", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(SapFoods.ROASTED_WALNUTS)));
+	//WILLOW
+	//YEW
 
 }
