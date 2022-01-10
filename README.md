@@ -1,4 +1,4 @@
-# [Sap](http://suikacraft.com)
+# Sap
 
 Sap is a Forge mod for Minecraft that brings a diverse array of tree species to your worlds!
 
