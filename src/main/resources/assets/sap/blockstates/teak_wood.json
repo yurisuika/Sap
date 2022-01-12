@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y": { "model": "sap:block/teak_wood" },
-        "axis=z": { "model": "sap:block/teak_wood", "x": 90 },
-        "axis=x": { "model": "sap:block/teak_wood", "x": 90, "y": 90 }
-    }
-}

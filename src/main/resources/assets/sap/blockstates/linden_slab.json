@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/linden_slab" },
-        "type=top": { "model": "sap:block/linden_slab_top" },
-        "type=double": { "model": "sap:block/linden_planks" }
-    }
-}

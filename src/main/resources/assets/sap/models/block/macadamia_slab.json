@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "sap:block/macadamia_planks",
-        "top": "sap:block/macadamia_planks",
-        "side": "sap:block/macadamia_planks"
-    }
-}

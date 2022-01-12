@@ -1,7 +1,0 @@
-{
-  "parent": "sap:block/template_branch_south",
-  "textures": {
-    "log": "sap:block/maple_branch",
-    "log_top": "sap:block/maple_branch_top"
-  }
-}

@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "powered=false": { "model": "sap:block/poplar_pressure_plate" },
-        "powered=true": { "model": "sap:block/poplar_pressure_plate_down" }
-    }
-}

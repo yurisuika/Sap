@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/juniper_slab" },
-        "type=top": { "model": "sap:block/juniper_slab_top" },
-        "type=double": { "model": "sap:block/juniper_planks" }
-    }
-}

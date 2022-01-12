@@ -1,7 +1,0 @@
-{
-	"parent": "block/template_wooden_trapdoor_bottom",
-	"textures": {
-		"side": "sap:block/fir_door_top_side",
-		"texture": "sap:block/fir_trapdoor"
-	}
-}

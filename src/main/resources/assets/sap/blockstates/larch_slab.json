@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/larch_slab" },
-        "type=top": { "model": "sap:block/larch_slab_top" },
-        "type=double": { "model": "sap:block/larch_planks" }
-    }
-}

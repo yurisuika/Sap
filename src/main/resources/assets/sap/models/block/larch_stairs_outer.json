@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "sap:block/larch_planks",
-        "top": "sap:block/larch_planks",
-        "side": "sap:block/larch_planks"
-    }
-}

@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "sap:willow_log",
-    "sap:willow_wood",
-    "sap:stripped_willow_log",
-    "sap:stripped_willow_wood"
-  ]
-}

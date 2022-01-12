@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "sap:sycamore_log",
-    "sap:sycamore_wood",
-    "sap:stripped_sycamore_log",
-    "sap:stripped_sycamore_wood"
-  ]
-}

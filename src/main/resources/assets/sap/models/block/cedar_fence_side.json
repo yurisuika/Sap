@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_fence_side",
-  "textures": {
-		"rail": "sap:block/cedar_fence_rail",
-		"texture": "sap:block/cedar_fence"
-	}
-}

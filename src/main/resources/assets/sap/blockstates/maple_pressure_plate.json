@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "powered=false": { "model": "sap:block/maple_pressure_plate" },
-        "powered=true": { "model": "sap:block/maple_pressure_plate_down" }
-    }
-}

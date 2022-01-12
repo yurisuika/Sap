@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/plum_slab" },
-        "type=top": { "model": "sap:block/plum_slab_top" },
-        "type=double": { "model": "sap:block/plum_planks" }
-    }
-}

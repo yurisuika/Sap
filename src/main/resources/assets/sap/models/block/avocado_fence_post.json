@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_fence_post",
-  "textures": {
-		"top": "sap:block/avocado_fence_top",
-		"texture": "sap:block/avocado_fence"
-	}
-}

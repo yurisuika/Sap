@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "sap:block/apricot_planks",
-        "top": "sap:block/apricot_planks",
-        "side": "sap:block/apricot_planks"
-    }
-}

@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y":    { "model": "sap:block/juniper_log" },
-        "axis=z":     { "model": "sap:block/juniper_log", "x": 90 },
-        "axis=x":     { "model": "sap:block/juniper_log", "x": 90, "y": 90 }
-    }
-}

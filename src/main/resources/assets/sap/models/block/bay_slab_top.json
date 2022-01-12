@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab_top",
-    "textures": {
-        "bottom": "sap:block/bay_planks",
-        "top": "sap:block/bay_planks",
-        "side": "sap:block/bay_planks"
-    }
-}

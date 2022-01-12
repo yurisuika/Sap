@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "sap:macadamia_log",
-    "sap:macadamia_wood",
-    "sap:stripped_macadamia_log",
-    "sap:stripped_macadamia_wood"
-  ]
-}

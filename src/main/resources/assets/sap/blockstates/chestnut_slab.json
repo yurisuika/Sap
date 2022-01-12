@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/chestnut_slab" },
-        "type=top": { "model": "sap:block/chestnut_slab_top" },
-        "type=double": { "model": "sap:block/chestnut_planks" }
-    }
-}

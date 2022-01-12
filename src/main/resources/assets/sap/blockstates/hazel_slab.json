@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/hazel_slab" },
-        "type=top": { "model": "sap:block/hazel_slab_top" },
-        "type=double": { "model": "sap:block/hazel_planks" }
-    }
-}

@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "powered=false": { "model": "sap:block/lemon_pressure_plate" },
-        "powered=true": { "model": "sap:block/lemon_pressure_plate_down" }
-    }
-}

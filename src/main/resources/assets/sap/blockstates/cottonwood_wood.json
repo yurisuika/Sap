@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y": { "model": "sap:block/cottonwood_wood" },
-        "axis=z": { "model": "sap:block/cottonwood_wood", "x": 90 },
-        "axis=x": { "model": "sap:block/cottonwood_wood", "x": 90, "y": 90 }
-    }
-}

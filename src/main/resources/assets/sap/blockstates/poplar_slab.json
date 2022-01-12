@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/poplar_slab" },
-        "type=top": { "model": "sap:block/poplar_slab_top" },
-        "type=double": { "model": "sap:block/poplar_planks" }
-    }
-}

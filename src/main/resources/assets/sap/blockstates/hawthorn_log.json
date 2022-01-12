@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y":    { "model": "sap:block/hawthorn_log" },
-        "axis=z":     { "model": "sap:block/hawthorn_log", "x": 90 },
-        "axis=x":     { "model": "sap:block/hawthorn_log", "x": 90, "y": 90 }
-    }
-}

@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/apricot_slab" },
-        "type=top": { "model": "sap:block/apricot_slab_top" },
-        "type=double": { "model": "sap:block/apricot_planks" }
-    }
-}

@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "sap:locust_log",
-    "sap:locust_wood",
-    "sap:stripped_locust_log",
-    "sap:stripped_locust_wood"
-  ]
-}

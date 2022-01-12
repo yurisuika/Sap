@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y": { "model": "sap:block/yew_wood" },
-        "axis=z": { "model": "sap:block/yew_wood", "x": 90 },
-        "axis=x": { "model": "sap:block/yew_wood", "x": 90, "y": 90 }
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "parent": "block/inner_stairs",
-    "textures": {
-        "bottom": "sap:block/laurel_planks",
-        "top": "sap:block/laurel_planks",
-        "side": "sap:block/laurel_planks"
-    }
-}

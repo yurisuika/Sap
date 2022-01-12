@@ -1,6 +1,0 @@
-{
-    "parent": "block/leaves",
-    "textures": {
-        "all": "sap:block/blackwood_leaves"
-    }
-}

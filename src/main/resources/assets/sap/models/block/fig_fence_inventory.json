@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_fence_inventory",
-  "textures": {
-		"rail": "sap:block/fig_fence_rail",
-		"top": "sap:block/fig_fence_top",
-		"texture": "sap:block/fig_fence"
-	}
-}

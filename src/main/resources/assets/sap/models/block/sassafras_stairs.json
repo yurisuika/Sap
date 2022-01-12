@@ -1,8 +1,0 @@
-{
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "sap:block/sassafras_planks",
-        "top": "sap:block/sassafras_planks",
-        "side": "sap:block/sassafras_planks"
-    }
-}

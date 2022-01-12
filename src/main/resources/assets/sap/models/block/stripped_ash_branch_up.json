@@ -1,7 +1,0 @@
-{
-  "parent": "sap:block/template_stripped_branch_up",
-  "textures": {
-    "log": "sap:block/stripped_ash_branch",
-    "log_top": "sap:block/stripped_ash_branch_top"
-  }
-}

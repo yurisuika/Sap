@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/pine_slab" },
-        "type=top": { "model": "sap:block/pine_slab_top" },
-        "type=double": { "model": "sap:block/pine_planks" }
-    }
-}

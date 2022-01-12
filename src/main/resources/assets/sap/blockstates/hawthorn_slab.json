@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/hawthorn_slab" },
-        "type=top": { "model": "sap:block/hawthorn_slab_top" },
-        "type=double": { "model": "sap:block/hawthorn_planks" }
-    }
-}

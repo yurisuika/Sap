@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "sap:block/willow_planks",
-        "top": "sap:block/willow_planks",
-        "side": "sap:block/willow_planks"
-    }
-}

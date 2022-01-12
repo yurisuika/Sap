@@ -1,7 +1,0 @@
-{
-  "parent": "sap:block/template_stripped_twig_center",
-  "textures": {
-    "log": "sap:block/stripped_spruce_twig",
-    "log_top": "sap:block/stripped_spruce_twig_top"
-  }
-}

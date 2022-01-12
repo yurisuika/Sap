@@ -1,7 +1,0 @@
-{
-  "parent": "sap:block/template_twig_west",
-  "textures": {
-    "log": "sap:block/mesquite_twig",
-    "log_top": "sap:block/mesquite_twig_top"
-  }
-}

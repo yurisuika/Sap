@@ -1,8 +1,10 @@
-# Sap
+<p align="center"><img src="https://github.com/yurisuika/Sap/blob/Forge-1.16/src/main/resources/pack.png?raw=true" width="256" height="256"></p>
+
+# <p align="center">SAP</p>
 
 Sap is a Forge mod for Minecraft that brings a diverse array of tree species to your worlds!
 
-This mod was created for the *[SuikaCraft](https://github.com/yurisuika/SuikaCraft)* datapack for *[TerraForged](https://github.com/TerraForged/TerraForged)*. While saplings can be attained from trades, the added species are not made to be generated without the TerraForged datapack.
+This mod was created for the *[SuikaCraft](https://github.com/yurisuika/SuikaCraft)* data pack for *[TerraForged](https://github.com/TerraForged/TerraForged)*. While saplings can be attained from trades, the added species are not made to be generated without the TerraForged data pack.
 
 Sap is a mod that seeks to add realistic species to the game. Currently, Sap is all about trees. However, in time we will add in more flora! Fauna and sediments are on the planning board too for future mods!
 
@@ -12,99 +14,7 @@ While Optifine does not current support loading assets from other mods, you can 
 
 ---
 
-## FEATURES
-
-### Trees
-
-##### Species (Including Vanilla)
-
-* 57 species, bringing a total of 63 to Minecraft!
-
-* Acacia, Alder, Almond, Apple, Apricot, Ash, Aspen, Avocado, Balsa, Banyan (renamed Jungle) Bay, Beech, Birch, Blackwood, Cedar, Cherry, Chestnut, Cinnamon, Clove, Cottonwood, Cypress, Ebony (renamed Dark Oak), Elm, Fir, Fig, Ginkgo, Gum, Hazel, Hawthorn, Hemlock, Hickory, Hornbeam, Juniper, Larch, Laurel, Lemon, Lime, Linden, Locust, Macadamia, Mahogany, Mango, Maple, Mesquite, Mulberry, Oak, Olive, Orange, Peach, Pear, Pecan, Pine, Plum, Poplar, Redwood, Rosewood, Sassafras, Spruce, Sycamore, Teak, Walnut, Willow, Yew
-
-* All have standard block and item sets, including boats and signs!
-
-* Branches and Twigs for all species. These allow for more realistic tree structures!
-
-* Many have food items that drop from leaves! Nuts can be roasted!
-
-* Sap now has sap!
-
-##### Additional Features
-
-* Nothing yet...
-
----
-
-## CHANGELOG
-
-### 1.16 Releases
-
-##### 0.3.2
-
-* Removed TerraForged Dependency.
-* Added food items for many species!
-* Bumped Abnormals Core version to 3.1.1.
-* Merged custom models into mod!
-
-<details><summary>
-CLICK HERE TO SEE PAST LOGS!
-</summary>
-
-##### 0.3.1
-
-* Fixed twig post placement update.
-
-##### 0.3.0
-
-* 1.16!
-</details>
-
-### 1.15 Releases
-
-##### 0.3.1
-
-* Fixed twig post placement update.
-
-<details><summary>
-CLICK HERE TO SEE PAST LOGS!
-</summary>
-
-##### 0.2.4
-
-* Branches no longer connect to leaves!
-* Branches and twigs now only connect to ground blocks downwards!
-
-##### 0.2.3
-
-* Revised textures!
-
-##### 0.2.2
-
-* Twigs are no longer climbable! This was making walking through a dense forest a little annoying.
-* Fixes and improvements!
-
-##### 0.2.1
-
-* Added stripped branches and twigs!
-* Fixed blockstate updating for branches and twigs with waterlogging!
-* Twigs are now climbable!
-* World loading screen colors are now done in Isabella style!
-
-##### 0.2.0
-
-* Now a total of 57 trees added, bring the total to 63 including vanilla trees!
-* Fixed Swamp and Dark Forest tinting for Isabella style.
-* Fixed vanilla leaves item tints for Isabella style.
-
-##### 0.1.0
-
-* Initial release with a few trees and branches and twigs.
-</details>
-
----
-
-## DOWNLOADS
+## <p align="center">DOWNLOADS</p>
 
 ### Source Building
 
@@ -134,48 +44,28 @@ Stable releases of Sap ready to be consumed by the public!
 
 ##### 1.16 - [*`0.3.2`*](https://github.com/yurisuika/Sap/releases/download/0.3.21/sap-1.16.4-0.3.2.jar)
 
+For Forge 1.16.4!
+
 ##### 1.15 - [*`0.3.1`*](https://github.com/yurisuika/Sap/releases/download/0.3.1/sap-1.15.2-0.3.1.jar)
 
----
-
-## PLANNED FEATURES
-
-Sooner or later, this is what we plan to have in the mod!
-
-#### Upcoming
-
-* Herbs and Shrubs
-* Crops Domesticated from Wild Plants
-* Food Items and Recipes
-
-#### Possible Additions
-
-* Advanced Sapling Propagation
-* Vanilla Style Textures
-* Generated Trees
+For Forge 1.15.2!
 
 ---
 
-## LINKS
+## <p align="center">LINKS</p>
 
-Get all the hot tips and tricks here!
+#### Dependencies
 
-#### DEPENDENCIES
+Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library as a dependency! Older versions may have different dependencies!
 
-Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library as a dependency!
-
-Older versions may have different dependencies!
-
-#### RESOURCEPACKS
+#### Resource Packs
 
 Check out our *[custom model pack](https://github.com/yurisuika/Isabella)* that goes along with the Isabella custom model pack! Includes fully textured fences, billowing custom leaves, and improved (stripped) wood ends!
 
-#### SERVERS
+#### Servers
 
 Join *`play.suikacraft.com`* to play on SuikaCraft today!
 
-#### COMMUNITY
+#### Community
 
 The one and only! Join the *[SuikaCraft Discord](https://discord.gg/0zdNEkQle7Qg9C1H)* to find the latest discussion on the resource pack and server or just to chat!
-
-We've set up a *[SuikaCraft Guilded](https://www.guilded.gg/i/Z2yNYwAk)* server as well! Come join the chat of the future!

@@ -1,7 +1,0 @@
-{
-  "parent": "sap:block/template_branch_inventory",
-  "textures": {
-    "log": "sap:block/ginkgo_branch",
-    "log_top": "sap:block/ginkgo_branch_top"
-  }
-}

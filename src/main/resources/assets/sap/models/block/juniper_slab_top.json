@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab_top",
-    "textures": {
-        "bottom": "sap:block/juniper_planks",
-        "top": "sap:block/juniper_planks",
-        "side": "sap:block/juniper_planks"
-    }
-}

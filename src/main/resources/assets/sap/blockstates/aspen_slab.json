@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/aspen_slab" },
-        "type=top": { "model": "sap:block/aspen_slab_top" },
-        "type=double": { "model": "sap:block/aspen_planks" }
-    }
-}

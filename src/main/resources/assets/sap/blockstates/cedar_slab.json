@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "sap:block/cedar_slab" },
-        "type=top": { "model": "sap:block/cedar_slab_top" },
-        "type=double": { "model": "sap:block/cedar_planks" }
-    }
-}

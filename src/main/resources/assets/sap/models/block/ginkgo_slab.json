@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "sap:block/ginkgo_planks",
-        "top": "sap:block/ginkgo_planks",
-        "side": "sap:block/ginkgo_planks"
-    }
-}

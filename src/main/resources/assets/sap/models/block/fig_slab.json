@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "sap:block/fig_planks",
-        "top": "sap:block/fig_planks",
-        "side": "sap:block/fig_planks"
-    }
-}

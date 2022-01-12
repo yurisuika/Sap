@@ -1,6 +1,0 @@
-{
-    "parent": "block/button_pressed",
-    "textures": {
-        "texture": "sap:block/aspen_planks"
-    }
-}
