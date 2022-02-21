@@ -34,22 +34,6 @@ cd ./sap
 
 Afterwards, your compiled JAR will be in `./build/libs`.
 
-### Released Builds
-
-While you can compile from source, you can always download the latest releases right off of GitHub. Either click the links below or check the releases tab.
-
-#### Latest Builds
-
-Stable releases of Sap ready to be consumed by the public!
-
-##### 1.16 - [*`0.3.2`*](https://github.com/yurisuika/Sap/releases/download/0.3.21/sap-1.16.4-0.3.2.jar)
-
-For Forge 1.16.4!
-
-##### 1.15 - [*`0.3.1`*](https://github.com/yurisuika/Sap/releases/download/0.3.1/sap-1.15.2-0.3.1.jar)
-
-For Forge 1.15.2!
-
 ---
 
 ## <p align="center">LINKS</p>
@@ -61,10 +45,6 @@ Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnorma
 #### Resource Packs
 
 Check out our *[custom model pack](https://github.com/yurisuika/Isabella)* that goes along with the Isabella custom model pack! Includes fully textured fences, billowing custom leaves, and improved (stripped) wood ends!
-
-#### Servers
-
-Join *`play.suikacraft.com`* to play on SuikaCraft today!
 
 #### Community
 
