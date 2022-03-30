@@ -1,8 +1,6 @@
 <p align="center"><img src="https://github.com/yurisuika/Sap/blob/Forge-1.16/src/main/resources/pack.png?raw=true" width="256" height="256"></p>
 
-# <p align="center">SAP</p>
-
-Sap is a Forge mod for Minecraft that brings a diverse array of tree species to your worlds!
+**Sap** is a Forge mod for Minecraft that brings a diverse array of tree species to your worlds!
 
 This mod was created for the *[SuikaCraft](https://github.com/yurisuika/SuikaCraft)* data pack for *[TerraForged](https://github.com/TerraForged/TerraForged)*. While saplings can be attained from trades, the added species are not made to be generated without the TerraForged data pack.
 
@@ -12,15 +10,9 @@ While currently only available in the style of *[Isabella](https://github.com/yu
 
 While Optifine does not current support loading assets from other mods, you can either extract the shader data from the jar and put it in your pack to make Sap's blocks rustle in the wind or use the custom model pack to add them to your list. Be sure to toggle shaders to enable Optifine detects Sap's blocks, otherwise it will have loaded the shaders before detecting Sap's blocks!
 
----
-
-## <p align="center">DOWNLOADS</p>
-
-### Source Building
+#### Compiling
 
 To build from source you will need have JDK 8 to compile and, optionally, Git to clone the repository. Otherwise, download the archive and just run `./gradlew build` from the root project folder.
-
-#### Commands
 
 When using Git, just choose a directory you wish to keep the project root folder in, decide which branch you wish to compile, and then run these commands:
 
@@ -34,18 +26,10 @@ cd ./sap
 
 Afterwards, your compiled JAR will be in `./build/libs`.
 
----
+#### Releases
 
-## <p align="center">LINKS</p>
-
-#### Dependencies
-
-Sap requires the *[Abnormals Core](https://github.com/minecraftabnormals/Abnormals-Core)* library as a dependency! Older versions may have different dependencies!
-
-#### Resource Packs
-
-Check out our *[custom model pack](https://github.com/yurisuika/Isabella)* that goes along with the Isabella custom model pack! Includes fully textured fences, billowing custom leaves, and improved (stripped) wood ends!
+Don't want to bother building from source? Get the releases *[right here](https://github.com/yurisuika/Sap/releases)* now!
 
 #### Community
 
-The one and only! Join the *[SuikaCraft Discord](https://discord.gg/0zdNEkQle7Qg9C1H)* to find the latest discussion on the resource pack and server or just to chat!
+The one and only! Join the *[SuikaCraft Discord](https://discord.gg/0zdNEkQle7Qg9C1H)* for the latest discussion on our server, resource pack, mods, or just to chat!
