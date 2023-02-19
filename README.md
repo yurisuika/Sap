@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/yurisuika/Sap/blob/Forge-1.16/src/main/resources/pack.png?raw=true" width="256" height="256"></p>
+<p align="center"><img src="https://github.com/yurisuika/Sap/blob/Forge-1.16.5/src/main/resources/pack.png?raw=true" width="256" height="256"></p>
 
 **Sap** is a Forge mod for Minecraft that brings a diverse array of tree species to your worlds!
 
